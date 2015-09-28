@@ -74,7 +74,7 @@
     [self.navigationController popViewControllerAnimated:true];
 }
 
-- (UIWindow *)mainWindow
+- (UIWindow *)window
 {
     UIApplication *app = [UIApplication sharedApplication];
     if ([app.delegate respondsToSelector:@selector(window)]) {

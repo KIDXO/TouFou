@@ -36,6 +36,6 @@
 /**
  *  返回顶层窗口
  */
-- (UIWindow *)mainWindow;
+- (UIWindow *)window;
 
 @end

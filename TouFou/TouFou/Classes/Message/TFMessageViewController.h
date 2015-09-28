@@ -1,5 +1,5 @@
 //
-//  TFSideViewController.h
+//  TFMessageViewController.h
 //  TouFou
 //
 //  Created by KID on 15/9/28.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TFSideViewController : UIViewController
+@interface TFMessageViewController : UIBaseViewController
 
 @end

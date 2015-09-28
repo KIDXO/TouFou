@@ -18,9 +18,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    UIBaseNavigationController *nav = [[UIBaseNavigationController alloc] initWithRootViewController:self.vcHome];
-    self.window.rootViewController = nav;
-//    [self initViewController];
+    self.window.rootViewController = self.drawerViewController;
+    [self initViewController];
     
     [self.window makeKeyAndVisible];
     

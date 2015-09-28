@@ -94,7 +94,10 @@
     
     [manager POST:URL parameters:dicParams constructingBodyWithBlock:^(id<AFMultipartFormData> totalFormData) {
         for (TFFormData *data in formData) {
-            [totalFormData appendPartWithFileData:data.data name:data.name fileName:data.filename mimeType:data.mimeType];
+            [totalFormData appendPartWithFileData:data.data
+                                             name:data.name
+                                         fileName:data.filename
+                                         mimeType:data.mimeType];
         }
     }
           success:^(AFHTTPRequestOperation *operation, id responseObject) {

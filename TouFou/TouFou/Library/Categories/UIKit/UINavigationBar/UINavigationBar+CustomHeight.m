@@ -34,6 +34,11 @@ static char const *const heightKey = "Height";
     objc_setAssociatedObject(self, heightKey, @(height), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
+- (NSNumber *)height
+{
+    return objc_getAssociatedObject(self, heightKey);
+}
+
 - (CGSize)sizeThatFits:(CGSize)size
 {
     CGSize newSize;
