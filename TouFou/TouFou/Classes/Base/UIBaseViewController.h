@@ -13,7 +13,7 @@
 /**
  *  自定义标题
  */
-@property (nonatomic, copy) NSString *titleCustom;
+@property (nonatomic, copy)  NSString * __nullable titleCustom;
 
 /**
  *  设置上个视图控制器的导航栏状态,默认NO显示
@@ -24,6 +24,12 @@
  */
 @property (nonatomic, assign) BOOL navigationBarHidden_New;
 
+/**
+ *  创建右侧按钮
+ */
+- (void)createCustomButton:(nullable NSString *)title
+                    target:(nullable id)target
+                    action:(nullable SEL)action;
 /**
  *  创建返回按钮
  */
@@ -36,6 +42,6 @@
 /**
  *  返回顶层窗口
  */
-- (UIWindow *)window;
+- (nullable UIWindow *)window;
 
 @end

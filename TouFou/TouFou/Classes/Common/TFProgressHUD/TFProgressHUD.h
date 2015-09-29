@@ -19,6 +19,8 @@
 + (void)showInfoWithStatus:(NSString*)status;
 + (void)showSuccessWithStatus:(NSString*)status;
 + (void)showErrorWithStatus:(NSString*)status;
++ (void)showErrorNetwork;
++ (void)showErrorTimeOut;
 
 + (void)dismiss;
 + (void)dismissWithDelay:(NSTimeInterval)delay;

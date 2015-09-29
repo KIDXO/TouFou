@@ -10,4 +10,6 @@
 
 @interface TFSettingViewController : UIBaseViewController
 
+@property (nonatomic, weak) IBOutlet UITableView    *tableView;
+
 @end

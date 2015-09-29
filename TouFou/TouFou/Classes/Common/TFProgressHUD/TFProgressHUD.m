@@ -16,6 +16,11 @@
     [SVProgressHUD show];
 }
 
++ (void)showLoading
+{
+    [self showWithStatus:@"正在加载"];
+}
+
 + (void)showWithStatus:(NSString*)status
 {
     [SVProgressHUD showWithStatus:status];
@@ -44,6 +49,16 @@
 + (void)showErrorWithStatus:(NSString*)status
 {
     [SVProgressHUD showErrorWithStatus:status];
+}
+
++ (void)showErrorNetwork
+{
+    [self showErrorWithStatus:@"网络已被断开\n请连网后重试"];
+}
+
++ (void)showErrorTimeOut
+{
+    [self showErrorWithStatus:@"网络连接超时\n请您稍后再试"];
 }
 
 + (void)dismiss

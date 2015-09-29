@@ -69,6 +69,7 @@
               if (failure) {
                   failure(error);
               }
+              [TFProgressHUD showErrorTimeOut];
               [[UIApplication sharedApplication] endedNetworkActivity];
           }];
 }
@@ -110,6 +111,7 @@
               if (failure) {
                   failure(error);
               }
+              [TFProgressHUD showErrorTimeOut];
               [[UIApplication sharedApplication] endedNetworkActivity];
           }];
 }
@@ -143,6 +145,7 @@
              if (failure) {
                  failure(error);
              }
+             [TFProgressHUD showErrorTimeOut];
              [[UIApplication sharedApplication] endedNetworkActivity];
          }];
 }

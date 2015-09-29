@@ -54,6 +54,18 @@
     TFLog(@"视图控制器消失: %@", self.titleCustom);
 }
 
+- (void)createCustomButton:(nullable NSString *)title
+                    target:(nullable id)target
+                    action:(nullable SEL)action
+{
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:title
+                                                             style:UIBarButtonItemStylePlain
+                                                            target:target
+                                                            action:action];
+    item.tintColor = TFColor_Button;
+    self.navigationItem.rightBarButtonItem = item;
+}
+
 - (void)createReturnButton
 {
     CGRect frame = CGRectZero;

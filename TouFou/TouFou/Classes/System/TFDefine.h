@@ -26,6 +26,7 @@
 #define TFColor_Main                    [UIColor colorWithHex:0x555555]
 #define TFColor_Line                    [UIColor colorWithHex:0xEAEAEA]
 #define TFColor_Text_Light              [UIColor colorWithHex:0xBCBCBC]
+#define TFColor_Button                  [UIColor colorWithHex:0x76A6FD]
 #define TFColor_Separator               [UIColor colorWithWhite:1 alpha:0.2]
 
 
