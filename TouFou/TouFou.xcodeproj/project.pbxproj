@@ -161,6 +161,24 @@
 		07C709071BBA5943005E1CD3 /* TFAnalystTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07C709051BBA5943005E1CD3 /* TFAnalystTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		07C7090B1BBA5DEB005E1CD3 /* TFMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C709091BBA5DEB005E1CD3 /* TFMessageTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		07C7090C1BBA5DEB005E1CD3 /* TFMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07C7090A1BBA5DEB005E1CD3 /* TFMessageTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		07C709121BBA866E005E1CD3 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C709111BBA866E005E1CD3 /* UINavigationController+FDFullscreenPopGesture.m */; settings = {ASSET_TAGS = (); }; };
+		07C709171BBA8EDC005E1CD3 /* TFMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C709151BBA8EDC005E1CD3 /* TFMineViewController.m */; settings = {ASSET_TAGS = (); }; };
+		07C709181BBA8EDC005E1CD3 /* TFMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07C709161BBA8EDC005E1CD3 /* TFMineViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		07C7091C1BBA904B005E1CD3 /* TFMineHeadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C7091A1BBA904B005E1CD3 /* TFMineHeadTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		07C7091D1BBA904B005E1CD3 /* TFMineHeadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07C7091B1BBA904B005E1CD3 /* TFMineHeadTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		07C709211BBA9065005E1CD3 /* TFMineMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C7091F1BBA9065005E1CD3 /* TFMineMenuTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		07C709221BBA9065005E1CD3 /* TFMineMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07C709201BBA9065005E1CD3 /* TFMineMenuTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		07DF31161BBB720700276990 /* TFMineEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DF31141BBB720700276990 /* TFMineEditViewController.m */; settings = {ASSET_TAGS = (); }; };
+		07DF31171BBB720700276990 /* TFMineEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07DF31151BBB720700276990 /* TFMineEditViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		07DF311B1BBB737600276990 /* TFMineEditHeadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DF31191BBB737600276990 /* TFMineEditHeadTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		07DF311C1BBB737600276990 /* TFMineEditHeadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07DF311A1BBB737600276990 /* TFMineEditHeadTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		07DF31201BBB738800276990 /* TFMineMenuHeadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DF311E1BBB738800276990 /* TFMineMenuHeadTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		07DF31211BBB738800276990 /* TFMineMenuHeadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07DF311F1BBB738800276990 /* TFMineMenuHeadTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		07DF31261BBB8E3300276990 /* TFUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DF31241BBB8E3300276990 /* TFUserViewController.m */; settings = {ASSET_TAGS = (); }; };
+		07DF31271BBB8E3300276990 /* TFUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07DF31251BBB8E3300276990 /* TFUserViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		07DF312B1BBBB1EB00276990 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DF312A1BBBB1EB00276990 /* HMSegmentedControl.m */; settings = {ASSET_TAGS = (); }; };
+		07DF31311BBBB2F800276990 /* DZNSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DF312E1BBBB2F800276990 /* DZNSegmentedControl.m */; settings = {ASSET_TAGS = (); }; };
+		07DF31321BBBB2F800276990 /* UIScrollView+DZNSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DF31301BBBB2F800276990 /* UIScrollView+DZNSegmentedControl.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -466,6 +484,35 @@
 		07C709081BBA5DEB005E1CD3 /* TFMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFMessageTableViewCell.h; sourceTree = "<group>"; };
 		07C709091BBA5DEB005E1CD3 /* TFMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFMessageTableViewCell.m; sourceTree = "<group>"; };
 		07C7090A1BBA5DEB005E1CD3 /* TFMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFMessageTableViewCell.xib; sourceTree = "<group>"; };
+		07C709101BBA866E005E1CD3 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		07C709111BBA866E005E1CD3 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		07C709141BBA8EDC005E1CD3 /* TFMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFMineViewController.h; sourceTree = "<group>"; };
+		07C709151BBA8EDC005E1CD3 /* TFMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFMineViewController.m; sourceTree = "<group>"; };
+		07C709161BBA8EDC005E1CD3 /* TFMineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFMineViewController.xib; sourceTree = "<group>"; };
+		07C709191BBA904B005E1CD3 /* TFMineHeadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFMineHeadTableViewCell.h; sourceTree = "<group>"; };
+		07C7091A1BBA904B005E1CD3 /* TFMineHeadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFMineHeadTableViewCell.m; sourceTree = "<group>"; };
+		07C7091B1BBA904B005E1CD3 /* TFMineHeadTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFMineHeadTableViewCell.xib; sourceTree = "<group>"; };
+		07C7091E1BBA9065005E1CD3 /* TFMineMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFMineMenuTableViewCell.h; sourceTree = "<group>"; };
+		07C7091F1BBA9065005E1CD3 /* TFMineMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFMineMenuTableViewCell.m; sourceTree = "<group>"; };
+		07C709201BBA9065005E1CD3 /* TFMineMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFMineMenuTableViewCell.xib; sourceTree = "<group>"; };
+		07DF31131BBB720700276990 /* TFMineEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFMineEditViewController.h; sourceTree = "<group>"; };
+		07DF31141BBB720700276990 /* TFMineEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFMineEditViewController.m; sourceTree = "<group>"; };
+		07DF31151BBB720700276990 /* TFMineEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFMineEditViewController.xib; sourceTree = "<group>"; };
+		07DF31181BBB737600276990 /* TFMineEditHeadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFMineEditHeadTableViewCell.h; sourceTree = "<group>"; };
+		07DF31191BBB737600276990 /* TFMineEditHeadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFMineEditHeadTableViewCell.m; sourceTree = "<group>"; };
+		07DF311A1BBB737600276990 /* TFMineEditHeadTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFMineEditHeadTableViewCell.xib; sourceTree = "<group>"; };
+		07DF311D1BBB738800276990 /* TFMineMenuHeadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFMineMenuHeadTableViewCell.h; sourceTree = "<group>"; };
+		07DF311E1BBB738800276990 /* TFMineMenuHeadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFMineMenuHeadTableViewCell.m; sourceTree = "<group>"; };
+		07DF311F1BBB738800276990 /* TFMineMenuHeadTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFMineMenuHeadTableViewCell.xib; sourceTree = "<group>"; };
+		07DF31231BBB8E3300276990 /* TFUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFUserViewController.h; sourceTree = "<group>"; };
+		07DF31241BBB8E3300276990 /* TFUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFUserViewController.m; sourceTree = "<group>"; };
+		07DF31251BBB8E3300276990 /* TFUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFUserViewController.xib; sourceTree = "<group>"; };
+		07DF31291BBBB1EB00276990 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
+		07DF312A1BBBB1EB00276990 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
+		07DF312D1BBBB2F800276990 /* DZNSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZNSegmentedControl.h; sourceTree = "<group>"; };
+		07DF312E1BBBB2F800276990 /* DZNSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZNSegmentedControl.m; sourceTree = "<group>"; };
+		07DF312F1BBBB2F800276990 /* UIScrollView+DZNSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+DZNSegmentedControl.h"; sourceTree = "<group>"; };
+		07DF31301BBBB2F800276990 /* UIScrollView+DZNSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+DZNSegmentedControl.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -535,6 +582,8 @@
 				07C4DA911BB9079C00828031 /* Common */,
 				072342EE1BB8DD4F00837FF7 /* Home */,
 				07C4DAE51BB9435A00828031 /* Side */,
+				07C709131BBA8ECA005E1CD3 /* Mine */,
+				07DF31221BBB8E2200276990 /* User */,
 				07C4DAD31BB9421400828031 /* Analyst */,
 				07C4DAD41BB9421400828031 /* Message */,
 				07C4DAD51BB9421400828031 /* Monitor */,
@@ -594,6 +643,8 @@
 			children = (
 				07C4D8E81BB9043600828031 /* AFNetworking */,
 				07C4D8FC1BB9043600828031 /* Categories */,
+				07DF312C1BBBB2F800276990 /* DZNSegmentedControl */,
+				07DF31281BBBB1EB00276990 /* HMSegmentedControl */,
 				07C4D9A71BB9043600828031 /* JVFloatingDrawer */,
 				07C4D9AF1BB9043700828031 /* MJRefresh */,
 				07C4D9DC1BB9043700828031 /* SDWebImage */,
@@ -1176,6 +1227,8 @@
 			children = (
 				07C4DAB91BB92AE000828031 /* UINavigationController+BATransitions.h */,
 				07C4DABA1BB92AE000828031 /* UINavigationController+BATransitions.m */,
+				07C709101BBA866E005E1CD3 /* UINavigationController+FDFullscreenPopGesture.h */,
+				07C709111BBA866E005E1CD3 /* UINavigationController+FDFullscreenPopGesture.m */,
 				07C4DABD1BB92AE000828031 /* UINavigationController+JZExtension.h */,
 				07C4DABE1BB92AE000828031 /* UINavigationController+JZExtension.m */,
 				07C4DAC11BB92AE000828031 /* UINavigationController+StackManager.h */,
@@ -1243,6 +1296,69 @@
 			path = Side;
 			sourceTree = "<group>";
 		};
+		07C709131BBA8ECA005E1CD3 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				07C709141BBA8EDC005E1CD3 /* TFMineViewController.h */,
+				07C709151BBA8EDC005E1CD3 /* TFMineViewController.m */,
+				07C709161BBA8EDC005E1CD3 /* TFMineViewController.xib */,
+				07C709191BBA904B005E1CD3 /* TFMineHeadTableViewCell.h */,
+				07C7091A1BBA904B005E1CD3 /* TFMineHeadTableViewCell.m */,
+				07C7091B1BBA904B005E1CD3 /* TFMineHeadTableViewCell.xib */,
+				07C7091E1BBA9065005E1CD3 /* TFMineMenuTableViewCell.h */,
+				07C7091F1BBA9065005E1CD3 /* TFMineMenuTableViewCell.m */,
+				07C709201BBA9065005E1CD3 /* TFMineMenuTableViewCell.xib */,
+				07DF31121BBB71F200276990 /* Edit */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		07DF31121BBB71F200276990 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				07DF31131BBB720700276990 /* TFMineEditViewController.h */,
+				07DF31141BBB720700276990 /* TFMineEditViewController.m */,
+				07DF31151BBB720700276990 /* TFMineEditViewController.xib */,
+				07DF31181BBB737600276990 /* TFMineEditHeadTableViewCell.h */,
+				07DF31191BBB737600276990 /* TFMineEditHeadTableViewCell.m */,
+				07DF311A1BBB737600276990 /* TFMineEditHeadTableViewCell.xib */,
+				07DF311D1BBB738800276990 /* TFMineMenuHeadTableViewCell.h */,
+				07DF311E1BBB738800276990 /* TFMineMenuHeadTableViewCell.m */,
+				07DF311F1BBB738800276990 /* TFMineMenuHeadTableViewCell.xib */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		07DF31221BBB8E2200276990 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				07DF31231BBB8E3300276990 /* TFUserViewController.h */,
+				07DF31241BBB8E3300276990 /* TFUserViewController.m */,
+				07DF31251BBB8E3300276990 /* TFUserViewController.xib */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		07DF31281BBBB1EB00276990 /* HMSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				07DF31291BBBB1EB00276990 /* HMSegmentedControl.h */,
+				07DF312A1BBBB1EB00276990 /* HMSegmentedControl.m */,
+			);
+			path = HMSegmentedControl;
+			sourceTree = "<group>";
+		};
+		07DF312C1BBBB2F800276990 /* DZNSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				07DF312D1BBBB2F800276990 /* DZNSegmentedControl.h */,
+				07DF312E1BBBB2F800276990 /* DZNSegmentedControl.m */,
+				07DF312F1BBBB2F800276990 /* UIScrollView+DZNSegmentedControl.h */,
+				07DF31301BBBB2F800276990 /* UIScrollView+DZNSegmentedControl.m */,
+			);
+			path = DZNSegmentedControl;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1308,19 +1424,26 @@
 				07C4DADA1BB9422200828031 /* TFMonitorViewController.xib in Resources */,
 				07C4DAE41BB9423700828031 /* TFAnalystViewController.xib in Resources */,
 				0700CA7A1BBA2B540074421A /* TFHomeTableViewCell.xib in Resources */,
+				07C709221BBA9065005E1CD3 /* TFMineMenuTableViewCell.xib in Resources */,
 				07C4DA871BB9043700828031 /* SVProgressHUD.bundle in Resources */,
 				07C4DA9D1BB910E100828031 /* TFHomeViewController.xib in Resources */,
 				07C4DAEF1BB9436700828031 /* TFSideViewController.xib in Resources */,
 				07C4DAD21BB9417E00828031 /* TFAgreementViewController.xib in Resources */,
 				07C4DAAA1BB91CC500828031 /* TFSettingViewController.xib in Resources */,
+				07DF31171BBB720700276990 /* TFMineEditViewController.xib in Resources */,
 				072342E11BB8DB9000837FF7 /* LaunchScreen.storyboard in Resources */,
 				072342DE1BB8DB9000837FF7 /* Assets.xcassets in Resources */,
+				07C7091D1BBA904B005E1CD3 /* TFMineHeadTableViewCell.xib in Resources */,
+				07DF31211BBB738800276990 /* TFMineMenuHeadTableViewCell.xib in Resources */,
 				07C709071BBA5943005E1CD3 /* TFAnalystTableViewCell.xib in Resources */,
 				07C4DA711BB9043700828031 /* MJRefresh.bundle in Resources */,
 				07C4DAED1BB9436700828031 /* TFSideTableViewCell.xib in Resources */,
+				07C709181BBA8EDC005E1CD3 /* TFMineViewController.xib in Resources */,
 				07C7090C1BBA5DEB005E1CD3 /* TFMessageTableViewCell.xib in Resources */,
+				07DF31271BBB8E3300276990 /* TFUserViewController.xib in Resources */,
 				07C4DADF1BB9422C00828031 /* TFMessageViewController.xib in Resources */,
 				072342DC1BB8DB9000837FF7 /* Main.storyboard in Resources */,
+				07DF311C1BBB737600276990 /* TFMineEditHeadTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1341,6 +1464,7 @@
 				07C4DA311BB9043700828031 /* UIColor+Modify.m in Sources */,
 				07C4DA701BB9043700828031 /* MJRefreshStateHeader.m in Sources */,
 				07C4DA3A1BB9043700828031 /* UIImage+Merge.m in Sources */,
+				07DF31321BBBB2F800276990 /* UIScrollView+DZNSegmentedControl.m in Sources */,
 				07C4DA1E1BB9043700828031 /* NSString+Emoji.m in Sources */,
 				07C4DA151BB9043700828031 /* AFURLRequestSerialization.m in Sources */,
 				07C4DA271BB9043700828031 /* UIApplication+ApplicationSize.m in Sources */,
@@ -1366,11 +1490,14 @@
 				07C4DA171BB9043700828031 /* AFURLSessionManager.m in Sources */,
 				07C4DA251BB9043700828031 /* NSTimer+Addition.m in Sources */,
 				07C4DA7E1BB9043700828031 /* SDWebImagePrefetcher.m in Sources */,
+				07C709171BBA8EDC005E1CD3 /* TFMineViewController.m in Sources */,
 				07C4DA231BB9043700828031 /* NSString+Trims.m in Sources */,
 				07C4DA7F1BB9043700828031 /* UIButton+WebCache.m in Sources */,
 				07C4DA4B1BB9043700828031 /* UINavigationItem+Lock.m in Sources */,
 				07C4DA161BB9043700828031 /* AFURLResponseSerialization.m in Sources */,
 				07C4DAD11BB9417E00828031 /* TFAgreementViewController.m in Sources */,
+				07DF31261BBB8E3300276990 /* TFUserViewController.m in Sources */,
+				07C7091C1BBA904B005E1CD3 /* TFMineHeadTableViewCell.m in Sources */,
 				07C4DA8A1BB9043700828031 /* CJSONDeserializer.m in Sources */,
 				07C4DA301BB9043700828031 /* UIColor+HEX.m in Sources */,
 				07C4DAE31BB9423700828031 /* TFAnalystViewController.m in Sources */,
@@ -1399,8 +1526,10 @@
 				07C4DA1B1BB9043700828031 /* NSDictionary+URL.m in Sources */,
 				07C4DA421BB9043700828031 /* UILabel+AutoSize.m in Sources */,
 				07C4DA261BB9043700828031 /* NSURL+Param.m in Sources */,
+				07DF311B1BBB737600276990 /* TFMineEditHeadTableViewCell.m in Sources */,
 				07C4DA371BB9043700828031 /* UIImage+Capture.m in Sources */,
 				07C4DAEC1BB9436700828031 /* TFSideTableViewCell.m in Sources */,
+				07DF31201BBB738800276990 /* TFMineMenuHeadTableViewCell.m in Sources */,
 				07C4DA391BB9043700828031 /* UIImage+FX.m in Sources */,
 				07C4DA181BB9043700828031 /* NSDate+Extension.m in Sources */,
 				07C4DA691BB9043700828031 /* MJRefreshAutoNormalFooter.m in Sources */,
@@ -1411,6 +1540,7 @@
 				07C4DA731BB9043700828031 /* UIScrollView+MJExtension.m in Sources */,
 				07C4DA2B1BB9043700828031 /* UIButton+BackgroundColor.m in Sources */,
 				07C4DAD91BB9422200828031 /* TFMonitorViewController.m in Sources */,
+				07DF31311BBBB2F800276990 /* DZNSegmentedControl.m in Sources */,
 				07C4DA811BB9043700828031 /* UIImage+MultiFormat.m in Sources */,
 				07C4DA221BB9043700828031 /* NSString+Size.m in Sources */,
 				07C4DAA91BB91CC500828031 /* TFSettingViewController.m in Sources */,
@@ -1434,12 +1564,14 @@
 				07C4DA121BB9043700828031 /* AFNetworkReachabilityManager.m in Sources */,
 				07C4DA631BB9043700828031 /* MJRefreshAutoFooter.m in Sources */,
 				07C4DA7C1BB9043700828031 /* SDWebImageDownloaderOperation.m in Sources */,
+				07DF312B1BBBB1EB00276990 /* HMSegmentedControl.m in Sources */,
 				07C4DA6B1BB9043700828031 /* MJRefreshBackGifFooter.m in Sources */,
 				07C4DA6C1BB9043700828031 /* MJRefreshBackNormalFooter.m in Sources */,
 				07C4DA5D1BB9043700828031 /* UIWebView+MetaParser.m in Sources */,
 				07C4DA591BB9043700828031 /* UIViewController+KeyboardAnimation.m in Sources */,
 				07C4DA321BB9043700828031 /* UIColor+Random.m in Sources */,
 				07C4DA541BB9043700828031 /* UIView+Animation.m in Sources */,
+				07C709121BBA866E005E1CD3 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				072342D31BB8DB9000837FF7 /* main.m in Sources */,
 				07C4DA791BB9043700828031 /* SDWebImageCompat.m in Sources */,
 				07C4DA721BB9043700828031 /* MJRefreshConst.m in Sources */,
@@ -1447,8 +1579,10 @@
 				07C4DA511BB9043700828031 /* UITextField+Shake.m in Sources */,
 				07C4DA671BB9043700828031 /* MJRefreshHeader.m in Sources */,
 				07C4DA601BB9043700828031 /* JVFloatingDrawerSpringAnimator.m in Sources */,
+				07DF31161BBB720700276990 /* TFMineEditViewController.m in Sources */,
 				07C4DA5F1BB9043700828031 /* UIWindow+Hierarchy.m in Sources */,
 				07C4DA751BB9043700828031 /* UIView+MJExtension.m in Sources */,
+				07C709211BBA9065005E1CD3 /* TFMineMenuTableViewCell.m in Sources */,
 				07C4DA4F1BB9043700828031 /* UITextField+History.m in Sources */,
 				07C4DA331BB9043700828031 /* UIColor+Web.m in Sources */,
 				07C4DA401BB9043700828031 /* UIImageView+Letters.m in Sources */,

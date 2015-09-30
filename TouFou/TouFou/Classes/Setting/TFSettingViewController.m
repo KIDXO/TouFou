@@ -46,7 +46,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    if (section == 3) {
+    if (section == 4) {
         return 100;
     }
     return 20;
@@ -69,7 +69,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 4;
+    return 5;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -85,6 +85,9 @@
             return 2;
             break;
         case 3:
+            return 1;
+            break;
+        case 4:
             return 1;
             break;
         default:
@@ -139,6 +142,16 @@
         }
     }
     else if (indexPath.section == 3) {
+        static NSString *strIdentifier3 = @"UITableViewCell3";
+        if (indexPath.row == 0) {
+            cell = [tableView dequeueReusableCellWithIdentifier:strIdentifier3];
+            if (cell == nil) {
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:strIdentifier3];
+                cell.textLabel.text = @"关于我们";
+            }
+        }
+    }
+    else if (indexPath.section == 4) {
         static NSString *strIdentifier4 = @"UITableViewCell4";
         if (indexPath.row == 0) {
             cell = [tableView dequeueReusableCellWithIdentifier:strIdentifier4];

@@ -27,6 +27,11 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
     
     [self.tableView registerNib:[UINib nibWithNibName:@"TFHomeTableViewCell" bundle:nil]
          forCellReuseIdentifier:strIdentifier];
+    
+    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self
+                                                                                action:@selector(actionDrawer)];
+    swipe.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipe];
 }
 
 - (void)didReceiveMemoryWarning

@@ -8,6 +8,7 @@
 
 #import "TFSideViewController.h"
 #import "TFSideTableViewCell.h"
+#import "TFMineViewController.h"
 #import "TFAnalystViewController.h"
 #import "TFMessageViewController.h"
 #import "TFMonitorViewController.h"
@@ -51,6 +52,14 @@ static NSString *strIdentifier = @"TFSideTableViewCell";
     _labProject.text = @"8242";
     _labFollow.text = @"1354";
     _labFans.text = @"2521";
+}
+
+- (IBAction)actionMine:(id)sender
+{
+    AppDelegate *app = [AppDelegate sharedAppDelegate];
+    UIViewController *vc = [[TFMineViewController alloc] initWithNibName:@"TFMineViewController" bundle:nil];
+    [app.vcHome.navigationController pushViewController:vc animated:NO];
+    [app actionDrawerClose:YES];
 }
 
 #pragma mark -

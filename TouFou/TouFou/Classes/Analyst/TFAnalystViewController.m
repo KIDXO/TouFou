@@ -8,6 +8,7 @@
 
 #import "TFAnalystViewController.h"
 #import "TFAnalystTableViewCell.h"
+#import "TFUserViewController.h"
 
 static NSString *strIdentifier = @"TFAnalystTableViewCell";
 
@@ -85,6 +86,8 @@ static NSString *strIdentifier = @"TFAnalystTableViewCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    TFUserViewController *vc = [[TFUserViewController alloc] initWithNibName:@"TFUserViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
