@@ -9,6 +9,8 @@
 #import "TFSideViewController.h"
 #import "TFSideTableViewCell.h"
 #import "TFMineViewController.h"
+#import "TFMineFansViewController.h"
+#import "TFMineProjectViewController.h"
 #import "TFAnalystViewController.h"
 #import "TFMessageViewController.h"
 #import "TFMonitorViewController.h"
@@ -59,6 +61,39 @@ static NSString *strIdentifier = @"TFSideTableViewCell";
     AppDelegate *app = [AppDelegate sharedAppDelegate];
     UIViewController *vc = [[TFMineViewController alloc] initWithNibName:@"TFMineViewController" bundle:nil];
     [app.vcHome.navigationController pushViewController:vc animated:NO];
+    [app actionDrawerClose:YES];
+}
+
+- (IBAction)actionView:(UIButton *)sender
+{
+    AppDelegate *app = [AppDelegate sharedAppDelegate];
+    UIViewController *viewController = nil;
+    switch (sender.tag) {
+        case 1:
+        {
+            TFMineProjectViewController *vc = [[TFMineProjectViewController alloc] initWithNibName:@"TFMineProjectViewController" bundle:nil];
+            vc.style = TFMineProjectStyleFavorite;
+            viewController = vc;
+        }
+            break;
+        case 2:
+        {
+            TFMineFansViewController *vc = [[TFMineFansViewController alloc] initWithNibName:@"TFMineFansViewController" bundle:nil];
+            vc.style = TFMinePeopleStyleFollow;
+            viewController = vc;
+        }
+            break;
+        case 3:
+        {
+            TFMineFansViewController *vc = [[TFMineFansViewController alloc] initWithNibName:@"TFMineFansViewController" bundle:nil];
+            vc.style = TFMinePeopleStyleFans;
+            viewController = vc;
+        }
+            break;
+        default:
+            break;
+    }
+    [app.vcHome.navigationController pushViewController:viewController animated:NO];
     [app actionDrawerClose:YES];
 }
 

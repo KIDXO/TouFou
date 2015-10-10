@@ -25,13 +25,11 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
     [self setTitleCustom:@"投否首页"];
     [self createReturnButton];
     
+    [self initData];
+    [self initView];
+    
     [self.tableView registerNib:[UINib nibWithNibName:@"TFHomeTableViewCell" bundle:nil]
          forCellReuseIdentifier:strIdentifier];
-    
-    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self
-                                                                                action:@selector(actionDrawer)];
-    swipe.direction = UISwipeGestureRecognizerDirectionRight;
-    [self.view addGestureRecognizer:swipe];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,9 +50,102 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
     self.navigationItem.leftBarButtonItem = item;
 }
 
+- (void)initData
+{
+    self.arySource   = [[NSMutableArray alloc] initWithCapacity:0];
+    self.aryCategory = [[NSMutableArray alloc] initWithCapacity:0];
+    self.aryPeriod   = [[NSMutableArray alloc] initWithCapacity:0];
+    
+    for (int i = 0; i < 20; i++) {
+        [self.arySource     addObject:[NSString stringWithFormat:@"%d",i]];
+        [self.aryCategory   addObject:[NSString stringWithFormat:@"%d",i + 10]];
+        [self.aryPeriod     addObject:[NSString stringWithFormat:@"%d",i + 100]];
+    }
+}
+
+- (void)initView
+{
+    _tableCategory.delegate = self;
+    
+    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self
+                                                                                action:@selector(actionDrawer)];
+    swipe.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipe];
+    
+//    UIVisualEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+//    UIVisualEffectView *visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+//    visualEffectView.frame = _imageView.bounds;
+//    [_imageView addSubview:visualEffectView];
+}
+
 - (void)actionDrawer
 {
     [[AppDelegate sharedAppDelegate] actionDrawer:YES];
+}
+
+- (IBAction)actionCategory:(UIButton *)sender
+{
+    switch (sender.tag) {
+        case 1:
+        {
+            [_tableCategory setInfo:_arySource   type:TFHomeCategoryTypeSource];
+        }
+            break;
+        case 2:
+        {
+            [_tableCategory setInfo:_aryCategory type:TFHomeCategoryTypeCategory];
+        }
+            break;
+        case 3:
+        {
+            [_tableCategory setInfo:_aryPeriod   type:TFHomeCategoryTypePeriod];
+        }
+            break;
+        default:
+            break;
+    }
+    _viewDark.hidden = NO;
+    [_tableCategory.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]
+                                    atScrollPosition:UITableViewScrollPositionTop
+                                            animated:NO];
+    [UIView animateWithDuration:TFAnimate animations:^{
+        _tableCategory.origin = CGPointMake(0, 40);
+        _viewDark.alpha = 1;
+    }];
+}
+
+- (IBAction)actionCategoryClose:(UIButton *)sender
+{
+    [UIView animateWithDuration:TFAnimate animations:^{
+        _tableCategory.origin = CGPointMake(0, - _tableCategory.height + 40);
+        _viewDark.alpha = 0;
+    } completion:^(BOOL finished) {
+        _viewDark.hidden = YES;
+    }];
+}
+
+- (void)TFHomeCategoryViewSelect:(id)info type:(TFHomeCategoryType)type
+{
+    switch (type) {
+        case TFHomeCategoryTypeSource:
+        {
+            [_btnSource   setTitle:info forState:UIControlStateNormal];
+        }
+            break;
+        case TFHomeCategoryTypeCategory:
+        {
+            [_btnCategory setTitle:info forState:UIControlStateNormal];
+        }
+            break;
+        case TFHomeCategoryTypePeriod:
+        {
+            [_btnPeriod   setTitle:info forState:UIControlStateNormal];
+        }
+            break;
+        default:
+            break;
+    }
+    [self actionCategoryClose:nil];
 }
 
 #pragma mark -
@@ -97,7 +188,6 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     TFHomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:strIdentifier];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 

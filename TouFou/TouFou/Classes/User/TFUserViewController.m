@@ -7,10 +7,6 @@
 //
 
 #import "TFUserViewController.h"
-#import "TFHomeTableViewCell.h"
-#include <CoreText/CTFont.h>
-
-static NSString *strIdentifier = @"TFHomeTableViewCell";
 
 @interface TFUserViewController ()
 
@@ -25,9 +21,6 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
     [self setTitleCustom:@"个人主页"];
     [self createReturnButton];
     [self initView];
-    
-    [self.tableView registerNib:[UINib nibWithNibName:@"TFHomeTableViewCell" bundle:nil]
-         forCellReuseIdentifier:strIdentifier];
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,9 +36,6 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
     [self.controlSegment setCount:@((arc4random()%10000)) forSegmentAtIndex:0];
     [self.controlSegment setCount:@((arc4random()%10000)) forSegmentAtIndex:1];
     [self.controlSegment setCount:@((arc4random()%10000)) forSegmentAtIndex:2];
-    
-    _scrollViewTable.height = self.view.height - _viewSegment.height;
-    _scrollView.contentSize = CGSizeMake(0, _scrollView.height + _viewInfo.height);
 }
 
 - (void)initView
@@ -54,6 +44,12 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
     _imgHead.layer.masksToBounds = true;
     _btnFollow.layer.cornerRadius = 5;
     _btnFollow.layer.masksToBounds = true;
+    
+    _tableView1.delegate = self;
+    _tableView2.delegate = self;
+    _tableView3.delegate = self;
+    
+    _scrollViewTable.contentSize = CGSizeMake(TFWidth * 3, 0);
 }
 
 #pragma mark -
@@ -63,7 +59,7 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
     if (!_controlSegment) {
         _controlSegment = [[DZNSegmentedControl alloc] initWithItems:@[@"发布的点评", @"收藏的点评", @"收藏的项目"]];
         _controlSegment.delegate = self;
-        _controlSegment.selectedSegmentIndex = 1;
+        _controlSegment.selectedSegmentIndex = 0;
         _controlSegment.bouncySelectionIndicator = NO;
         _controlSegment.autoAdjustSelectionIndicatorWidth = YES;
         _controlSegment.height = _viewSegment.height;
@@ -82,9 +78,10 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
     return _controlSegment;
 }
 
-- (void)actionSegmentChange:(id)sender
+- (void)actionSegmentChange:(DZNSegmentedControl *)sender
 {
-    
+    [_scrollViewTable setContentOffset:CGPointMake(TFWidth * sender.selectedSegmentIndex, 0)
+                              animated:YES];
 }
 
 - (UIBarPosition)positionForBar:(id <UIBarPositioning>)view
@@ -93,52 +90,82 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
 }
 
 #pragma mark -
-#pragma mark TableView
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+#pragma mark ScrollView
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    return 250;
+    if (scrollView == _scrollViewTable) {
+        
+        CGFloat width = scrollView.frame.size.width;
+        int index = floor((scrollView.contentOffset.x - width / 2) / width) + 1;
+        [_controlSegment setSelectedSegmentIndex:index animated:YES];
+        
+        CGFloat height = TFHeight - TFHeightHead - TFHeightStatusBar;
+        switch (index) {
+            case 0: {
+                if (_tableView1.tableView.contentOffset.y > _tableView1.tableView.contentSize.height - _viewInfo.height - _viewSegment.height) {
+                    if (_tableView1.tableView.contentSize.height - height > _viewInfo.height) {
+                        _tableView1.tableView.contentOffset = CGPointMake(0, _tableView1.tableView.contentSize.height - height);
+                    }
+                    else {
+                        if (_viewSegment.origin.y == 0) {
+                            _tableView1.tableView.contentOffset = CGPointMake(0, _viewInfo.height);
+                        }
+                    }
+                }
+            }
+                break;
+            case 1: {
+                if (_tableView2.tableView.contentOffset.y > _tableView2.tableView.contentSize.height - _viewInfo.height - _viewSegment.height) {
+                    if (_tableView2.tableView.contentSize.height - height > _viewInfo.height) {
+                        _tableView2.tableView.contentOffset = CGPointMake(0, _tableView2.tableView.contentSize.height - height);
+                    }
+                    else {
+                        if (_viewSegment.origin.y == 0) {
+                            _tableView2.tableView.contentOffset = CGPointMake(0, _viewInfo.height);
+                        }
+                    }
+                }
+            }
+                break;
+            case 2: {
+                if (_tableView3.tableView.contentOffset.y > _tableView3.tableView.contentSize.height - _viewInfo.height - _viewSegment.height) {
+                    if (_tableView3.tableView.contentSize.height - height > _viewInfo.height) {
+                        _tableView3.tableView.contentOffset = CGPointMake(0, _tableView3.tableView.contentSize.height - height);
+                    }
+                    else {
+                        if (_viewSegment.origin.y == 0) {
+                            _tableView3.tableView.contentOffset = CGPointMake(0, _viewInfo.height);
+                        }
+                    }
+                }
+            }
+                break;
+            default:
+                break;
+        }
+    }
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+- (void)TFUserTableView:(UIScrollView *)scrollView
 {
-    return 10;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
-{
-    return 10;
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-    return nil;
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
-{
-    return nil;
-}
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return 20;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    TFHomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:strIdentifier];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    
+    CGFloat y = scrollView.contentOffset.y;
+    if (y < _viewInfo.height) {
+        _viewSegment.origin = CGPointMake(0, _viewInfo.height - y);
+        _viewInfo.origin = CGPointMake(0, - y);
+    }
+    else {
+        if (_viewSegment.origin.y > 0) {
+            _viewSegment.origin = CGPointMake(0, _viewInfo.height - y);
+            _viewInfo.origin = CGPointMake(0, - y);
+        }
+        else {
+            _viewSegment.origin = CGPointMake(0, 0);
+            _viewInfo.origin = CGPointMake(0, - _viewInfo.height);
+        }
+    }
+    _tableView1.tableView.contentOffset = CGPointMake(0, y);
+    _tableView2.tableView.contentOffset = CGPointMake(0, y);
+    _tableView3.tableView.contentOffset = CGPointMake(0, y);
 }
 
 @end

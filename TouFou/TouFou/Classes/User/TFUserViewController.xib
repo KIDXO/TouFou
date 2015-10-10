@@ -15,7 +15,9 @@
                 <outlet property="labName" destination="aS0-pA-OHW" id="Uep-hc-QiM"/>
                 <outlet property="scrollView" destination="tZe-6l-bel" id="1bZ-ZY-ooW"/>
                 <outlet property="scrollViewTable" destination="ysm-7v-9eU" id="ibN-9x-10K"/>
-                <outlet property="tableView" destination="Tyf-c2-uTJ" id="q7l-hG-ErI"/>
+                <outlet property="tableView1" destination="U9I-PP-6Vs" id="w4V-Is-yyl"/>
+                <outlet property="tableView2" destination="o1u-Ak-jHa" id="d8f-tg-Tc6"/>
+                <outlet property="tableView3" destination="pE7-95-Phn" id="9wf-aJ-mdd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewInfo" destination="bsh-Vx-OUb" id="q3R-dM-FIr"/>
                 <outlet property="viewSegment" destination="z7F-gG-VKr" id="msd-Kq-Ms0"/>
@@ -30,6 +32,31 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="ysm-7v-9eU">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <view tag="1" contentMode="scaleToFill" id="U9I-PP-6Vs" customClass="TFUserTableView">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view tag="2" contentMode="scaleToFill" id="o1u-Ak-jHa" customClass="TFUserTableView">
+                                    <rect key="frame" x="320" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view tag="3" contentMode="scaleToFill" id="pE7-95-Phn" customClass="TFUserTableView">
+                                    <rect key="frame" x="640" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="bwV-Qs-JYv"/>
+                            </connections>
+                        </scrollView>
                         <view contentMode="scaleToFill" id="bsh-Vx-OUb">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -97,7 +124,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" red="0.46274509803921571" green="0.65098039215686276" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                    <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="-3" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     <state key="normal" title="添加关注" image="TFUserFollow">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
@@ -122,21 +149,6 @@
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
-                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ysm-7v-9eU">
-                            <rect key="frame" x="0.0" y="310" width="320" height="258"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            <subviews>
-                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" id="Tyf-c2-uTJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="258"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <connections>
-                                        <outlet property="dataSource" destination="-1" id="FOM-hH-L6g"/>
-                                        <outlet property="delegate" destination="-1" id="yUm-Hs-Uab"/>
-                                    </connections>
-                                </tableView>
-                            </subviews>
-                        </scrollView>
                     </subviews>
                 </scrollView>
             </subviews>
@@ -145,6 +157,6 @@
         </view>
     </objects>
     <resources>
-        <image name="TFUserFollow" width="13" height="13"/>
+        <image name="TFUserFollow" width="15" height="15"/>
     </resources>
 </document>

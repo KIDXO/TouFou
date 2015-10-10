@@ -7,6 +7,10 @@
 //
 
 #import "TFMessageViewController.h"
+#import "TFMessageCommentViewController.h"
+#import "TFMessageGoodViewController.h"
+#import "TFMessagePushViewController.h"
+#import "TFMessageUpdateViewController.h"
 #import "TFMessageTableViewCell.h"
 
 static NSString *strIdentifier = @"TFMessageTableViewCell";
@@ -80,6 +84,22 @@ static NSString *strIdentifier = @"TFMessageTableViewCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (indexPath.row == 0) {
+        TFMessageCommentViewController *vc = [[TFMessageCommentViewController alloc] initWithNibName:@"TFMessageCommentViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else if (indexPath.row == 1) {
+        TFMessageGoodViewController *vc = [[TFMessageGoodViewController alloc] initWithNibName:@"TFMessageGoodViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else if (indexPath.row == 2) {
+        TFMessagePushViewController *vc = [[TFMessagePushViewController alloc] initWithNibName:@"TFMessagePushViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else if (indexPath.row == 3) {
+        TFMessageUpdateViewController *vc = [[TFMessageUpdateViewController alloc] initWithNibName:@"TFMessageUpdateViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

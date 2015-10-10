@@ -105,12 +105,10 @@ static NSString *strIdentifier2 = @"TFMineMenuHeadTableViewCell";
 {
     if (indexPath.section == 0) {
         TFMineEditHeadTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:strIdentifier1];
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
     else {
         TFMineMenuHeadTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:strIdentifier2];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         [cell setIndexPath:indexPath tableView:tableView];
         return cell;
     }

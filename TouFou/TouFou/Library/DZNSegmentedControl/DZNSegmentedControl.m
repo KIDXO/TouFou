@@ -523,6 +523,7 @@
     }
     
     [self unselectAllButtons];
+    [self didSelectButton:[self buttonAtIndex:segment]];
     
     self.userInteractionEnabled = NO;
     

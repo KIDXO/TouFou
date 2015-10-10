@@ -8,6 +8,9 @@
 
 #import "TFMineViewController.h"
 #import "TFMineEditViewController.h"
+#import "TFMineFansViewController.h"
+#import "TFMineDraftViewController.h"
+#import "TFMineProjectViewController.h"
 #import "TFMineHeadTableViewCell.h"
 #import "TFMineMenuTableViewCell.h"
 
@@ -104,12 +107,10 @@ static NSString *strIdentifier2 = @"TFMineMenuTableViewCell";
 {
     if (indexPath.section == 0) {
         TFMineHeadTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:strIdentifier1];
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
     else {
         TFMineMenuTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:strIdentifier2];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         [cell setIndexPath:indexPath];
         return cell;
     }
@@ -117,6 +118,53 @@ static NSString *strIdentifier2 = @"TFMineMenuTableViewCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (indexPath.section == 1) {
+        switch (indexPath.row) {
+            case 0:
+            {
+                TFMineFansViewController *vc = [[TFMineFansViewController alloc] initWithNibName:@"TFMineFansViewController" bundle:nil];
+                vc.style = TFMinePeopleStyleFollow;
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+                break;
+            case 1:
+            {
+                TFMineFansViewController *vc = [[TFMineFansViewController alloc] initWithNibName:@"TFMineFansViewController" bundle:nil];
+                vc.style = TFMinePeopleStyleFans;
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+                break;
+            case 2:
+            {
+                TFMineProjectViewController *vc = [[TFMineProjectViewController alloc] initWithNibName:@"TFMineProjectViewController" bundle:nil];
+                vc.style = TFMineProjectStyleRelease;
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+                break;
+            case 3:
+            {
+                TFMineProjectViewController *vc = [[TFMineProjectViewController alloc] initWithNibName:@"TFMineProjectViewController" bundle:nil];
+                vc.style = TFMineProjectStyleFavorite;
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+                break;
+            case 4:
+            {
+                TFMineProjectViewController *vc = [[TFMineProjectViewController alloc] initWithNibName:@"TFMineProjectViewController" bundle:nil];
+                vc.style = TFMineProjectStyleComment;
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+                break;
+            case 5:
+            {
+                TFMineDraftViewController *vc = [[TFMineDraftViewController alloc] initWithNibName:@"TFMineDraftViewController" bundle:nil];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+                break;
+            default:
+                break;
+        }
+    }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
