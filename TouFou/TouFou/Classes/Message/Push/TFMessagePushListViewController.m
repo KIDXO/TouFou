@@ -78,7 +78,7 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    [TFNotificationCenter postNotificationName:TFNotificationInfo object:nil];
 }
 
 @end

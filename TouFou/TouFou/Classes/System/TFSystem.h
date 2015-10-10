@@ -11,6 +11,7 @@
 
 #import "TFDefine.h"
 #import "TFInterface.h"
+#import "TFVCManager.h"
 #import "TFProgressHUD.h"
 
 #import "UIBaseViewController.h"

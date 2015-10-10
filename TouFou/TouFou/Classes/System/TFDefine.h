@@ -17,6 +17,9 @@
 #define TFLog(...)
 #endif
 
+#define TFNotificationCenter            [NSNotificationCenter defaultCenter]
+#define TFNotificationInfo              @"TFNotificationInfo"
+
 #define TFWidth                         UIScreen.width
 #define TFHeight                        UIScreen.height
 #define TFHeightHead                    44.f
