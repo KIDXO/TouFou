@@ -52,7 +52,7 @@ static NSString *strIdentifier = @"TFMineFansTableViewCell";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 0.5;
+    return TFHeightSeparator;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section

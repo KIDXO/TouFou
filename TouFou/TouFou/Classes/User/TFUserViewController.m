@@ -59,16 +59,16 @@
     if (!_controlSegment) {
         _controlSegment = [[DZNSegmentedControl alloc] initWithItems:@[@"发布的点评", @"收藏的点评", @"收藏的项目"]];
         _controlSegment.delegate = self;
+        _controlSegment.height = _viewSegment.height;
+        _controlSegment.width = _viewSegment.width;
         _controlSegment.selectedSegmentIndex = 0;
         _controlSegment.bouncySelectionIndicator = NO;
         _controlSegment.autoAdjustSelectionIndicatorWidth = YES;
-        _controlSegment.height = _viewSegment.height;
-        _controlSegment.width = _viewSegment.width;
         _controlSegment.titleColor = TFColor_Text_Light;
         _controlSegment.countColor = TFColor_Text_Light;
         _controlSegment.selectionIndicatorColor = TFColor_Button;
-        _controlSegment.backgroundColor = [UIColor clearColor];
         _controlSegment.tintColor = TFColor_Main;
+        _controlSegment.backgroundColor = [UIColor clearColor];
         _controlSegment.hairlineColor = [UIColor clearColor];
         _controlSegment.adjustsFontSizeToFitWidth = YES;
         _controlSegment.selectionIndicatorHeight = 3.0;

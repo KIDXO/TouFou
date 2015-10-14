@@ -32,6 +32,12 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
          forCellReuseIdentifier:strIdentifier];
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [self actionCategoryClose:nil];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

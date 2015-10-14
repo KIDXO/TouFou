@@ -7,15 +7,112 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TFInfoViewController">
             <connections>
+                <outlet property="btnWrite" destination="ZLV-ii-rTN" id="4VI-AP-tpA"/>
+                <outlet property="imgPhoto" destination="Sn6-Uz-7d6" id="0l3-bP-koB"/>
+                <outlet property="labTitle" destination="Jyx-80-Raw" id="7ZY-v7-3MN"/>
+                <outlet property="scrollView" destination="BJ7-dM-NJe" id="sAe-Ct-wRD"/>
+                <outlet property="scrollViewTable" destination="E9i-Gq-3se" id="Nhs-kB-pHl"/>
+                <outlet property="tableViewAdvice" destination="Sdp-Hz-gDJ" id="z0i-3e-tOX"/>
+                <outlet property="tableViewComment" destination="q4R-vy-YZ5" id="8LH-sa-lfO"/>
+                <outlet property="tableViewIntro" destination="3wW-4w-0cV" id="wnU-Bv-Hhi"/>
+                <outlet property="tableViewScore" destination="raT-e8-Jif" id="fLm-oM-sjG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewInfo" destination="m1Q-BG-qsK" id="o8Z-bN-7zT"/>
+                <outlet property="viewLine" destination="b3c-U1-qKa" id="WRb-oj-qau"/>
+                <outlet property="viewSegment" destination="pCx-oh-28N" id="ctU-bN-YNK"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BJ7-dM-NJe">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="E9i-Gq-3se">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <view tag="1" contentMode="scaleToFill" id="3wW-4w-0cV" customClass="TFInfoIntroTableView">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view tag="2" contentMode="scaleToFill" id="raT-e8-Jif" customClass="TFInfoScoreTableView">
+                                    <rect key="frame" x="320" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view tag="3" contentMode="scaleToFill" id="Sdp-Hz-gDJ" customClass="TFInfoAdviceTableView">
+                                    <rect key="frame" x="640" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view tag="1" contentMode="scaleToFill" id="q4R-vy-YZ5" customClass="TFInfoCommentTableView">
+                                    <rect key="frame" x="960" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="cso-oM-OhI"/>
+                            </connections>
+                        </scrollView>
+                        <view contentMode="scaleToFill" id="m1Q-BG-qsK">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" id="b3c-U1-qKa">
+                                    <rect key="frame" x="0.0" y="190" width="320" height="0.5"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Sn6-Uz-7d6">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="1" green="0.27633218209999999" blue="0.25712915419999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZLV-ii-rTN">
+                                    <rect key="frame" x="0.0" y="190" width="320" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="撰写分析文章" image="TFProjectWrite">
+                                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="actionWrite:" destination="-1" eventType="touchUpInside" id="oeo-XH-sMP"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="啊啥等哈就圣诞节阿红的煎熬圣诞节啊哈打卡机是啊啥等哈就圣诞节阿红的煎熬圣诞节啊哈打卡机是啊啥等哈就圣诞节阿红的煎熬圣诞节啊哈打卡机是" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jyx-80-Raw">
+                                    <rect key="frame" x="10" y="160" width="300" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="pCx-oh-28N">
+                            <rect key="frame" x="0.0" y="230" width="320" height="50"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="3h0-sk-gJd"/>
+                    </connections>
+                </scrollView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <point key="canvasLocation" x="304" y="248"/>
+            <point key="canvasLocation" x="103" y="263"/>
         </view>
     </objects>
+    <resources>
+        <image name="TFProjectWrite" width="30" height="22"/>
+    </resources>
 </document>

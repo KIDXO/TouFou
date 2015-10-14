@@ -51,7 +51,7 @@ static NSString *strIdentifier = @"TFMessageTableViewCell";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-    return 1;
+    return TFHeightSeparator;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section

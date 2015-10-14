@@ -107,7 +107,7 @@ static NSString *strIdentifier = @"TFSideTableViewCell";
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     if (section == 1) {
-        return 0.5;
+        return TFHeightSeparator;
     }
     return 0;
 }

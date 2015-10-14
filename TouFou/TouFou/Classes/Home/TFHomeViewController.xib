@@ -98,6 +98,10 @@
                                 <action selector="actionCategory:" destination="-1" eventType="touchUpInside" id="OXx-yL-LtR"/>
                             </connections>
                         </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TFHomeArrow" id="oWq-LC-ouV">
+                            <rect key="frame" x="88" y="17" width="10" height="5"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
@@ -109,4 +113,7 @@
             <point key="canvasLocation" x="408" y="345"/>
         </view>
     </objects>
+    <resources>
+        <image name="TFHomeArrow" width="10" height="5"/>
+    </resources>
 </document>

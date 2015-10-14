@@ -27,6 +27,31 @@
 		074C38B41BC79D6A00040373 /* TFMineDraftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074C38B21BC79D6A00040373 /* TFMineDraftViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		074C38B81BC79E4400040373 /* TFMineDraftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 074C38B61BC79E4400040373 /* TFMineDraftTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		074C38B91BC79E4400040373 /* TFMineDraftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074C38B71BC79E4400040373 /* TFMineDraftTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		0782F9A71BCCD0D2007A9943 /* TFInfoCommentContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0782F9A51BCCD0D2007A9943 /* TFInfoCommentContentCell.m */; settings = {ASSET_TAGS = (); }; };
+		0782F9A81BCCD0D2007A9943 /* TFInfoCommentContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0782F9A61BCCD0D2007A9943 /* TFInfoCommentContentCell.xib */; settings = {ASSET_TAGS = (); }; };
+		0782F9AB1BCCD3A8007A9943 /* TFInfoCommentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0782F9AA1BCCD3A8007A9943 /* TFInfoCommentInfo.m */; settings = {ASSET_TAGS = (); }; };
+		0782F9AE1BCCD410007A9943 /* TFInfoCommentResponseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0782F9AD1BCCD410007A9943 /* TFInfoCommentResponseInfo.m */; settings = {ASSET_TAGS = (); }; };
+		0782F9B81BCD04CC007A9943 /* TFInfoWriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0782F9B61BCD04CC007A9943 /* TFInfoWriteViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0782F9B91BCD04CC007A9943 /* TFInfoWriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0782F9B71BCD04CC007A9943 /* TFInfoWriteViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		07B946781BCBAB95003D2B4E /* TFInfoIntroDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B9466B1BCBAB95003D2B4E /* TFInfoIntroDetailCell.m */; settings = {ASSET_TAGS = (); }; };
+		07B946791BCBAB95003D2B4E /* TFInfoIntroDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B9466C1BCBAB95003D2B4E /* TFInfoIntroDetailCell.xib */; settings = {ASSET_TAGS = (); }; };
+		07B9467A1BCBAB95003D2B4E /* TFInfoIntroParamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B9466E1BCBAB95003D2B4E /* TFInfoIntroParamCell.m */; settings = {ASSET_TAGS = (); }; };
+		07B9467B1BCBAB95003D2B4E /* TFInfoIntroParamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B9466F1BCBAB95003D2B4E /* TFInfoIntroParamCell.xib */; settings = {ASSET_TAGS = (); }; };
+		07B9467C1BCBAB95003D2B4E /* TFInfoIntroSourceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B946711BCBAB95003D2B4E /* TFInfoIntroSourceCell.m */; settings = {ASSET_TAGS = (); }; };
+		07B9467D1BCBAB95003D2B4E /* TFInfoIntroSourceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B946721BCBAB95003D2B4E /* TFInfoIntroSourceCell.xib */; settings = {ASSET_TAGS = (); }; };
+		07B9467E1BCBAB95003D2B4E /* TFInfoIntroTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B946741BCBAB95003D2B4E /* TFInfoIntroTableView.m */; settings = {ASSET_TAGS = (); }; };
+		07B9467F1BCBAB95003D2B4E /* TFInfoIntroValueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B946761BCBAB95003D2B4E /* TFInfoIntroValueCell.m */; settings = {ASSET_TAGS = (); }; };
+		07B946801BCBAB95003D2B4E /* TFInfoIntroValueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B946771BCBAB95003D2B4E /* TFInfoIntroValueCell.xib */; settings = {ASSET_TAGS = (); }; };
+		07B946841BCBAEC0003D2B4E /* TFInfoScoreTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B946831BCBAEC0003D2B4E /* TFInfoScoreTableView.m */; settings = {ASSET_TAGS = (); }; };
+		07B946881BCBB0CD003D2B4E /* TFInfoScoreValueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B946861BCBB0CD003D2B4E /* TFInfoScoreValueCell.m */; settings = {ASSET_TAGS = (); }; };
+		07B946891BCBB0CD003D2B4E /* TFInfoScoreValueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B946871BCBB0CD003D2B4E /* TFInfoScoreValueCell.xib */; settings = {ASSET_TAGS = (); }; };
+		07B9468E1BCBB280003D2B4E /* CHCircleGaugeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B9468C1BCBB280003D2B4E /* CHCircleGaugeView.m */; settings = {ASSET_TAGS = (); }; };
+		07B946931BCBBCD8003D2B4E /* TFInfoScoreAboutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B946911BCBBCD8003D2B4E /* TFInfoScoreAboutCell.m */; settings = {ASSET_TAGS = (); }; };
+		07B946941BCBBCD8003D2B4E /* TFInfoScoreAboutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B946921BCBBCD8003D2B4E /* TFInfoScoreAboutCell.xib */; settings = {ASSET_TAGS = (); }; };
+		07B9469B1BCBBFBD003D2B4E /* TFInfoAdviceTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B946971BCBBFBD003D2B4E /* TFInfoAdviceTableView.m */; settings = {ASSET_TAGS = (); }; };
+		07B9469C1BCBBFBD003D2B4E /* TFInfoCommentTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B9469A1BCBBFBD003D2B4E /* TFInfoCommentTableView.m */; settings = {ASSET_TAGS = (); }; };
+		07B946A01BCBBFED003D2B4E /* TFInfoAdviceContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B9469E1BCBBFED003D2B4E /* TFInfoAdviceContentCell.m */; settings = {ASSET_TAGS = (); }; };
+		07B946A11BCBBFED003D2B4E /* TFInfoAdviceContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B9469F1BCBBFED003D2B4E /* TFInfoAdviceContentCell.xib */; settings = {ASSET_TAGS = (); }; };
 		07C4DA0F1BB9043700828031 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C4D8EA1BB9043600828031 /* AFHTTPRequestOperation.m */; settings = {ASSET_TAGS = (); }; };
 		07C4DA101BB9043700828031 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C4D8EC1BB9043600828031 /* AFHTTPRequestOperationManager.m */; settings = {ASSET_TAGS = (); }; };
 		07C4DA111BB9043700828031 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C4D8EE1BB9043600828031 /* AFHTTPSessionManager.m */; settings = {ASSET_TAGS = (); }; };
@@ -249,6 +274,48 @@
 		074C38B51BC79E4400040373 /* TFMineDraftTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFMineDraftTableViewCell.h; sourceTree = "<group>"; };
 		074C38B61BC79E4400040373 /* TFMineDraftTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFMineDraftTableViewCell.m; sourceTree = "<group>"; };
 		074C38B71BC79E4400040373 /* TFMineDraftTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFMineDraftTableViewCell.xib; sourceTree = "<group>"; };
+		0782F9A41BCCD0D2007A9943 /* TFInfoCommentContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoCommentContentCell.h; sourceTree = "<group>"; };
+		0782F9A51BCCD0D2007A9943 /* TFInfoCommentContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoCommentContentCell.m; sourceTree = "<group>"; };
+		0782F9A61BCCD0D2007A9943 /* TFInfoCommentContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFInfoCommentContentCell.xib; sourceTree = "<group>"; };
+		0782F9A91BCCD3A8007A9943 /* TFInfoCommentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoCommentInfo.h; sourceTree = "<group>"; };
+		0782F9AA1BCCD3A8007A9943 /* TFInfoCommentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoCommentInfo.m; sourceTree = "<group>"; };
+		0782F9AC1BCCD410007A9943 /* TFInfoCommentResponseInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoCommentResponseInfo.h; sourceTree = "<group>"; };
+		0782F9AD1BCCD410007A9943 /* TFInfoCommentResponseInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoCommentResponseInfo.m; sourceTree = "<group>"; };
+		0782F9B51BCD04CC007A9943 /* TFInfoWriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoWriteViewController.h; sourceTree = "<group>"; };
+		0782F9B61BCD04CC007A9943 /* TFInfoWriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoWriteViewController.m; sourceTree = "<group>"; };
+		0782F9B71BCD04CC007A9943 /* TFInfoWriteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFInfoWriteViewController.xib; sourceTree = "<group>"; };
+		07B9466A1BCBAB95003D2B4E /* TFInfoIntroDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoIntroDetailCell.h; sourceTree = "<group>"; };
+		07B9466B1BCBAB95003D2B4E /* TFInfoIntroDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoIntroDetailCell.m; sourceTree = "<group>"; };
+		07B9466C1BCBAB95003D2B4E /* TFInfoIntroDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFInfoIntroDetailCell.xib; sourceTree = "<group>"; };
+		07B9466D1BCBAB95003D2B4E /* TFInfoIntroParamCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoIntroParamCell.h; sourceTree = "<group>"; };
+		07B9466E1BCBAB95003D2B4E /* TFInfoIntroParamCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoIntroParamCell.m; sourceTree = "<group>"; };
+		07B9466F1BCBAB95003D2B4E /* TFInfoIntroParamCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFInfoIntroParamCell.xib; sourceTree = "<group>"; };
+		07B946701BCBAB95003D2B4E /* TFInfoIntroSourceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoIntroSourceCell.h; sourceTree = "<group>"; };
+		07B946711BCBAB95003D2B4E /* TFInfoIntroSourceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoIntroSourceCell.m; sourceTree = "<group>"; };
+		07B946721BCBAB95003D2B4E /* TFInfoIntroSourceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFInfoIntroSourceCell.xib; sourceTree = "<group>"; };
+		07B946731BCBAB95003D2B4E /* TFInfoIntroTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoIntroTableView.h; sourceTree = "<group>"; };
+		07B946741BCBAB95003D2B4E /* TFInfoIntroTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoIntroTableView.m; sourceTree = "<group>"; };
+		07B946751BCBAB95003D2B4E /* TFInfoIntroValueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoIntroValueCell.h; sourceTree = "<group>"; };
+		07B946761BCBAB95003D2B4E /* TFInfoIntroValueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoIntroValueCell.m; sourceTree = "<group>"; };
+		07B946771BCBAB95003D2B4E /* TFInfoIntroValueCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFInfoIntroValueCell.xib; sourceTree = "<group>"; };
+		07B946821BCBAEC0003D2B4E /* TFInfoScoreTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoScoreTableView.h; sourceTree = "<group>"; };
+		07B946831BCBAEC0003D2B4E /* TFInfoScoreTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoScoreTableView.m; sourceTree = "<group>"; };
+		07B946851BCBB0CD003D2B4E /* TFInfoScoreValueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoScoreValueCell.h; sourceTree = "<group>"; };
+		07B946861BCBB0CD003D2B4E /* TFInfoScoreValueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoScoreValueCell.m; sourceTree = "<group>"; };
+		07B946871BCBB0CD003D2B4E /* TFInfoScoreValueCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFInfoScoreValueCell.xib; sourceTree = "<group>"; };
+		07B9468B1BCBB280003D2B4E /* CHCircleGaugeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCircleGaugeView.h; sourceTree = "<group>"; };
+		07B9468C1BCBB280003D2B4E /* CHCircleGaugeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCircleGaugeView.m; sourceTree = "<group>"; };
+		07B9468F1BCBB29D003D2B4E /* CHCircleGaugeViewDebugMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHCircleGaugeViewDebugMacros.h; sourceTree = "<group>"; };
+		07B946901BCBBCD8003D2B4E /* TFInfoScoreAboutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoScoreAboutCell.h; sourceTree = "<group>"; };
+		07B946911BCBBCD8003D2B4E /* TFInfoScoreAboutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoScoreAboutCell.m; sourceTree = "<group>"; };
+		07B946921BCBBCD8003D2B4E /* TFInfoScoreAboutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFInfoScoreAboutCell.xib; sourceTree = "<group>"; };
+		07B946961BCBBFBD003D2B4E /* TFInfoAdviceTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoAdviceTableView.h; sourceTree = "<group>"; };
+		07B946971BCBBFBD003D2B4E /* TFInfoAdviceTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoAdviceTableView.m; sourceTree = "<group>"; };
+		07B946991BCBBFBD003D2B4E /* TFInfoCommentTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoCommentTableView.h; sourceTree = "<group>"; };
+		07B9469A1BCBBFBD003D2B4E /* TFInfoCommentTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoCommentTableView.m; sourceTree = "<group>"; };
+		07B9469D1BCBBFED003D2B4E /* TFInfoAdviceContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoAdviceContentCell.h; sourceTree = "<group>"; };
+		07B9469E1BCBBFED003D2B4E /* TFInfoAdviceContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoAdviceContentCell.m; sourceTree = "<group>"; };
+		07B9469F1BCBBFED003D2B4E /* TFInfoAdviceContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFInfoAdviceContentCell.xib; sourceTree = "<group>"; };
 		07C4D8E91BB9043600828031 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		07C4D8EA1BB9043600828031 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		07C4D8EB1BB9043600828031 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -738,6 +805,7 @@
 			children = (
 				07C4D8E81BB9043600828031 /* AFNetworking */,
 				07C4D8FC1BB9043600828031 /* Categories */,
+				07B9468A1BCBB280003D2B4E /* CHCircleGaugeView */,
 				07DF312C1BBBB2F800276990 /* DZNSegmentedControl */,
 				07DF31281BBBB1EB00276990 /* HMSegmentedControl */,
 				07C4D9A71BB9043600828031 /* JVFloatingDrawer */,
@@ -786,6 +854,90 @@
 			name = Draft;
 			path = TouFou/Classes/Mine/Draft;
 			sourceTree = SOURCE_ROOT;
+		};
+		0782F9B41BCD04BC007A9943 /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				0782F9B51BCD04CC007A9943 /* TFInfoWriteViewController.h */,
+				0782F9B61BCD04CC007A9943 /* TFInfoWriteViewController.m */,
+				0782F9B71BCD04CC007A9943 /* TFInfoWriteViewController.xib */,
+			);
+			path = Write;
+			sourceTree = "<group>";
+		};
+		07B946691BCBAB95003D2B4E /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				07B946731BCBAB95003D2B4E /* TFInfoIntroTableView.h */,
+				07B946741BCBAB95003D2B4E /* TFInfoIntroTableView.m */,
+				07B946751BCBAB95003D2B4E /* TFInfoIntroValueCell.h */,
+				07B946761BCBAB95003D2B4E /* TFInfoIntroValueCell.m */,
+				07B946771BCBAB95003D2B4E /* TFInfoIntroValueCell.xib */,
+				07B9466D1BCBAB95003D2B4E /* TFInfoIntroParamCell.h */,
+				07B9466E1BCBAB95003D2B4E /* TFInfoIntroParamCell.m */,
+				07B9466F1BCBAB95003D2B4E /* TFInfoIntroParamCell.xib */,
+				07B9466A1BCBAB95003D2B4E /* TFInfoIntroDetailCell.h */,
+				07B9466B1BCBAB95003D2B4E /* TFInfoIntroDetailCell.m */,
+				07B9466C1BCBAB95003D2B4E /* TFInfoIntroDetailCell.xib */,
+				07B946701BCBAB95003D2B4E /* TFInfoIntroSourceCell.h */,
+				07B946711BCBAB95003D2B4E /* TFInfoIntroSourceCell.m */,
+				07B946721BCBAB95003D2B4E /* TFInfoIntroSourceCell.xib */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		07B946811BCBAEC0003D2B4E /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				07B946821BCBAEC0003D2B4E /* TFInfoScoreTableView.h */,
+				07B946831BCBAEC0003D2B4E /* TFInfoScoreTableView.m */,
+				07B946851BCBB0CD003D2B4E /* TFInfoScoreValueCell.h */,
+				07B946861BCBB0CD003D2B4E /* TFInfoScoreValueCell.m */,
+				07B946871BCBB0CD003D2B4E /* TFInfoScoreValueCell.xib */,
+				07B946901BCBBCD8003D2B4E /* TFInfoScoreAboutCell.h */,
+				07B946911BCBBCD8003D2B4E /* TFInfoScoreAboutCell.m */,
+				07B946921BCBBCD8003D2B4E /* TFInfoScoreAboutCell.xib */,
+			);
+			path = Score;
+			sourceTree = "<group>";
+		};
+		07B9468A1BCBB280003D2B4E /* CHCircleGaugeView */ = {
+			isa = PBXGroup;
+			children = (
+				07B9468B1BCBB280003D2B4E /* CHCircleGaugeView.h */,
+				07B9468C1BCBB280003D2B4E /* CHCircleGaugeView.m */,
+				07B9468F1BCBB29D003D2B4E /* CHCircleGaugeViewDebugMacros.h */,
+			);
+			path = CHCircleGaugeView;
+			sourceTree = "<group>";
+		};
+		07B946951BCBBFBD003D2B4E /* Advice */ = {
+			isa = PBXGroup;
+			children = (
+				07B946961BCBBFBD003D2B4E /* TFInfoAdviceTableView.h */,
+				07B946971BCBBFBD003D2B4E /* TFInfoAdviceTableView.m */,
+				07B9469D1BCBBFED003D2B4E /* TFInfoAdviceContentCell.h */,
+				07B9469E1BCBBFED003D2B4E /* TFInfoAdviceContentCell.m */,
+				07B9469F1BCBBFED003D2B4E /* TFInfoAdviceContentCell.xib */,
+			);
+			path = Advice;
+			sourceTree = "<group>";
+		};
+		07B946981BCBBFBD003D2B4E /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				07B946991BCBBFBD003D2B4E /* TFInfoCommentTableView.h */,
+				07B9469A1BCBBFBD003D2B4E /* TFInfoCommentTableView.m */,
+				0782F9A41BCCD0D2007A9943 /* TFInfoCommentContentCell.h */,
+				0782F9A51BCCD0D2007A9943 /* TFInfoCommentContentCell.m */,
+				0782F9A61BCCD0D2007A9943 /* TFInfoCommentContentCell.xib */,
+				0782F9A91BCCD3A8007A9943 /* TFInfoCommentInfo.h */,
+				0782F9AA1BCCD3A8007A9943 /* TFInfoCommentInfo.m */,
+				0782F9AC1BCCD410007A9943 /* TFInfoCommentResponseInfo.h */,
+				0782F9AD1BCCD410007A9943 /* TFInfoCommentResponseInfo.m */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
 		};
 		07C4D8E81BB9043600828031 /* AFNetworking */ = {
 			isa = PBXGroup;
@@ -1463,6 +1615,11 @@
 				07DC4CC41BC97E2800211716 /* TFInfoViewController.h */,
 				07DC4CC51BC97E2800211716 /* TFInfoViewController.m */,
 				07DC4CC61BC97E2800211716 /* TFInfoViewController.xib */,
+				0782F9B41BCD04BC007A9943 /* Write */,
+				07B946691BCBAB95003D2B4E /* Intro */,
+				07B946811BCBAEC0003D2B4E /* Score */,
+				07B946951BCBBFBD003D2B4E /* Advice */,
+				07B946981BCBBFBD003D2B4E /* Comment */,
 			);
 			path = Info;
 			sourceTree = "<group>";
@@ -1652,21 +1809,29 @@
 				07C4DA871BB9043700828031 /* SVProgressHUD.bundle in Resources */,
 				07C4DA9D1BB910E100828031 /* TFHomeViewController.xib in Resources */,
 				07C4DAEF1BB9436700828031 /* TFSideViewController.xib in Resources */,
+				07B946A11BCBBFED003D2B4E /* TFInfoAdviceContentCell.xib in Resources */,
 				07C4DAD21BB9417E00828031 /* TFAgreementViewController.xib in Resources */,
 				07C4DAAA1BB91CC500828031 /* TFSettingViewController.xib in Resources */,
 				07DF31171BBB720700276990 /* TFMineEditViewController.xib in Resources */,
+				07B946941BCBBCD8003D2B4E /* TFInfoScoreAboutCell.xib in Resources */,
+				0782F9B91BCD04CC007A9943 /* TFInfoWriteViewController.xib in Resources */,
 				07EEA0CB1BC8CE0600ABFD6E /* TFMessageCommentTableViewCell.xib in Resources */,
+				07B9467D1BCBAB95003D2B4E /* TFInfoIntroSourceCell.xib in Resources */,
 				074C38AE1BC790DD00040373 /* TFMineProjectViewController.xib in Resources */,
 				072342E11BB8DB9000837FF7 /* LaunchScreen.storyboard in Resources */,
 				072342DE1BB8DB9000837FF7 /* Assets.xcassets in Resources */,
 				07EEA0DE1BC8E12900ABFD6E /* TFMessageGoodTableViewCell.xib in Resources */,
+				07B946791BCBAB95003D2B4E /* TFInfoIntroDetailCell.xib in Resources */,
 				07C7091D1BBA904B005E1CD3 /* TFMineHeadTableViewCell.xib in Resources */,
 				07DF31211BBB738800276990 /* TFMineMenuHeadTableViewCell.xib in Resources */,
 				07EEA0E91BC8E83D00ABFD6E /* TFMessageUpdateTableViewCell.xib in Resources */,
 				07C709071BBA5943005E1CD3 /* TFAnalystTableViewCell.xib in Resources */,
 				07C4DA711BB9043700828031 /* MJRefresh.bundle in Resources */,
+				0782F9A81BCCD0D2007A9943 /* TFInfoCommentContentCell.xib in Resources */,
+				07B946891BCBB0CD003D2B4E /* TFInfoScoreValueCell.xib in Resources */,
 				074C38A81BC786AA00040373 /* TFMineFansTableViewCell.xib in Resources */,
 				072B53441BC606DA00EF8432 /* TFMonitorTableViewCell.xib in Resources */,
+				07B946801BCBAB95003D2B4E /* TFInfoIntroValueCell.xib in Resources */,
 				07EEA0E41BC8E7EC00ABFD6E /* TFMessageUpdateViewController.xib in Resources */,
 				07C4DAED1BB9436700828031 /* TFSideTableViewCell.xib in Resources */,
 				07C709181BBA8EDC005E1CD3 /* TFMineViewController.xib in Resources */,
@@ -1678,6 +1843,7 @@
 				07C4DADF1BB9422C00828031 /* TFMessageViewController.xib in Resources */,
 				072342DC1BB8DB9000837FF7 /* Main.storyboard in Resources */,
 				074C38A31BC7834C00040373 /* TFMineFansViewController.xib in Resources */,
+				07B9467B1BCBAB95003D2B4E /* TFInfoIntroParamCell.xib in Resources */,
 				07EEA0F41BC907E800ABFD6E /* TFMessagePushTableViewCell.xib in Resources */,
 				07EEA0C61BC8CD8400ABFD6E /* TFMessageCommentViewController.xib in Resources */,
 				07EEA0EF1BC9079000ABFD6E /* TFMessagePushViewController.xib in Resources */,
@@ -1708,6 +1874,7 @@
 				07C4DA151BB9043700828031 /* AFURLRequestSerialization.m in Sources */,
 				07C4DA271BB9043700828031 /* UIApplication+ApplicationSize.m in Sources */,
 				07C4DA341BB9043700828031 /* UIDevice+Hardware.m in Sources */,
+				07B9469C1BCBBFBD003D2B4E /* TFInfoCommentTableView.m in Sources */,
 				07C4DA5A1BB9043700828031 /* UIWebView+Canvas.m in Sources */,
 				07C4DAC51BB92AE000828031 /* UINavigationController+JZExtension.m in Sources */,
 				0700CA791BBA2B540074421A /* TFHomeTableViewCell.m in Sources */,
@@ -1761,6 +1928,7 @@
 				07C4DA4D1BB9043700828031 /* UIScreen+Frame.m in Sources */,
 				07C4DA6A1BB9043700828031 /* MJRefreshAutoStateFooter.m in Sources */,
 				07C4DADE1BB9422C00828031 /* TFMessageViewController.m in Sources */,
+				07B946841BCBAEC0003D2B4E /* TFInfoScoreTableView.m in Sources */,
 				07C4DA4E1BB9043700828031 /* UIScrollView+Addition.m in Sources */,
 				07C7090B1BBA5DEB005E1CD3 /* TFMessageTableViewCell.m in Sources */,
 				07C4DA5B1BB9043700828031 /* UIWebView+JS.m in Sources */,
@@ -1769,6 +1937,8 @@
 				07C4DA1B1BB9043700828031 /* NSDictionary+URL.m in Sources */,
 				07C4DA421BB9043700828031 /* UILabel+AutoSize.m in Sources */,
 				07C4DA261BB9043700828031 /* NSURL+Param.m in Sources */,
+				0782F9B81BCD04CC007A9943 /* TFInfoWriteViewController.m in Sources */,
+				07B9468E1BCBB280003D2B4E /* CHCircleGaugeView.m in Sources */,
 				07DF311B1BBB737600276990 /* TFMineEditHeadTableViewCell.m in Sources */,
 				07C4DA371BB9043700828031 /* UIImage+Capture.m in Sources */,
 				07C4DAEC1BB9436700828031 /* TFSideTableViewCell.m in Sources */,
@@ -1778,13 +1948,16 @@
 				07C4DA391BB9043700828031 /* UIImage+FX.m in Sources */,
 				07C4DA181BB9043700828031 /* NSDate+Extension.m in Sources */,
 				07C4DA691BB9043700828031 /* MJRefreshAutoNormalFooter.m in Sources */,
+				0782F9A71BCCD0D2007A9943 /* TFInfoCommentContentCell.m in Sources */,
 				07C4DA2C1BB9043700828031 /* UIButton+CountDown.m in Sources */,
 				07C4DA761BB9043700828031 /* MKAnnotationView+WebCache.m in Sources */,
 				07C4DA521BB9043700828031 /* UITextView+PlaceHolder.m in Sources */,
 				07C4DA5C1BB9043700828031 /* UIWebView+Load.m in Sources */,
+				07B9467F1BCBAB95003D2B4E /* TFInfoIntroValueCell.m in Sources */,
 				07C4DA731BB9043700828031 /* UIScrollView+MJExtension.m in Sources */,
 				07C4DA2B1BB9043700828031 /* UIButton+BackgroundColor.m in Sources */,
 				07C4DAD91BB9422200828031 /* TFMonitorViewController.m in Sources */,
+				0782F9AE1BCCD410007A9943 /* TFInfoCommentResponseInfo.m in Sources */,
 				07DF31311BBBB2F800276990 /* DZNSegmentedControl.m in Sources */,
 				07C4DA811BB9043700828031 /* UIImage+MultiFormat.m in Sources */,
 				07C4DA221BB9043700828031 /* NSString+Size.m in Sources */,
@@ -1794,6 +1967,7 @@
 				07C4DA3F1BB9043700828031 /* UIImageView+GeometryConversion.m in Sources */,
 				07C4DA951BB907D000828031 /* TFNetWorking.m in Sources */,
 				07C4DA551BB9043700828031 /* UIView+Find.m in Sources */,
+				07B9467E1BCBAB95003D2B4E /* TFInfoIntroTableView.m in Sources */,
 				07C4DA571BB9043700828031 /* UIView+Screenshot.m in Sources */,
 				07C4DA3D1BB9043700828031 /* UIImageView+BetterFace.m in Sources */,
 				074C38B81BC79E4400040373 /* TFMineDraftTableViewCell.m in Sources */,
@@ -1805,8 +1979,10 @@
 				07C4DA351BB9043700828031 /* UIDevice+PasscodeStatus.m in Sources */,
 				07C4DA361BB9043700828031 /* UIImage+Alpha.m in Sources */,
 				07C4DA101BB9043700828031 /* AFHTTPRequestOperationManager.m in Sources */,
+				0782F9AB1BCCD3A8007A9943 /* TFInfoCommentInfo.m in Sources */,
 				07C4DA781BB9043700828031 /* SDImageCache.m in Sources */,
 				07C4DA6E1BB9043700828031 /* MJRefreshGifHeader.m in Sources */,
+				07B9469B1BCBBFBD003D2B4E /* TFInfoAdviceTableView.m in Sources */,
 				07EEA0E81BC8E83D00ABFD6E /* TFMessageUpdateTableViewCell.m in Sources */,
 				07C4DAEE1BB9436700828031 /* TFSideViewController.m in Sources */,
 				07C4DA121BB9043700828031 /* AFNetworkReachabilityManager.m in Sources */,
@@ -1817,6 +1993,7 @@
 				07C4DA6B1BB9043700828031 /* MJRefreshBackGifFooter.m in Sources */,
 				07C4DA6C1BB9043700828031 /* MJRefreshBackNormalFooter.m in Sources */,
 				07C4DA5D1BB9043700828031 /* UIWebView+MetaParser.m in Sources */,
+				07B946781BCBAB95003D2B4E /* TFInfoIntroDetailCell.m in Sources */,
 				07EEA0EE1BC9079000ABFD6E /* TFMessagePushViewController.m in Sources */,
 				07C4DA591BB9043700828031 /* UIViewController+KeyboardAnimation.m in Sources */,
 				07DC4CC71BC97E2800211716 /* TFInfoViewController.m in Sources */,
@@ -1828,11 +2005,14 @@
 				07C4DA721BB9043700828031 /* MJRefreshConst.m in Sources */,
 				07C4DAAE1BB928B300828031 /* TFProgressHUD.m in Sources */,
 				07EEA0F81BC90E6200ABFD6E /* TFMessagePushListViewController.m in Sources */,
+				07B946881BCBB0CD003D2B4E /* TFInfoScoreValueCell.m in Sources */,
 				07EEA0F31BC907E800ABFD6E /* TFMessagePushTableViewCell.m in Sources */,
 				07C4DA511BB9043700828031 /* UITextField+Shake.m in Sources */,
 				07C4DA671BB9043700828031 /* MJRefreshHeader.m in Sources */,
 				07C4DA601BB9043700828031 /* JVFloatingDrawerSpringAnimator.m in Sources */,
+				07B9467C1BCBAB95003D2B4E /* TFInfoIntroSourceCell.m in Sources */,
 				07DF31161BBB720700276990 /* TFMineEditViewController.m in Sources */,
+				07B946931BCBBCD8003D2B4E /* TFInfoScoreAboutCell.m in Sources */,
 				07EEA0CA1BC8CE0600ABFD6E /* TFMessageCommentTableViewCell.m in Sources */,
 				07C4DA5F1BB9043700828031 /* UIWindow+Hierarchy.m in Sources */,
 				074C38A71BC786AA00040373 /* TFMineFansTableViewCell.m in Sources */,
@@ -1845,11 +2025,13 @@
 				07C4DA611BB9043700828031 /* JVFloatingDrawerView.m in Sources */,
 				07C4DA1F1BB9043700828031 /* NSString+MIME.m in Sources */,
 				07C4DA2A1BB9043700828031 /* UIApplication+Permissions.m in Sources */,
+				07B946A01BCBBFED003D2B4E /* TFInfoAdviceContentCell.m in Sources */,
 				07EEA0C51BC8CD8400ABFD6E /* TFMessageCommentViewController.m in Sources */,
 				07C4DA381BB9043700828031 /* UIImage+Color.m in Sources */,
 				07C4DA981BB90FD100828031 /* UIBaseViewController.m in Sources */,
 				07C4DA581BB9043700828031 /* UIView+Shake.m in Sources */,
 				07C4DA5E1BB9043700828031 /* UIWebView+Style.m in Sources */,
+				07B9467A1BCBAB95003D2B4E /* TFInfoIntroParamCell.m in Sources */,
 				07C4DA6D1BB9043700828031 /* MJRefreshBackStateFooter.m in Sources */,
 				07C4DA8C1BB9043700828031 /* NSDictionary_JSONExtensions.m in Sources */,
 				07C4DAA01BB911F800828031 /* UIBaseNavigationController.m in Sources */,
@@ -1973,7 +2155,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TouFou/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1987,7 +2168,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TouFou/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

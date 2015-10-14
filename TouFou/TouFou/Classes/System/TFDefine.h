@@ -24,6 +24,7 @@
 #define TFHeight                        UIScreen.height
 #define TFHeightHead                    44.f
 #define TFHeightStatusBar               20.f
+#define TFHeightSeparator               0.5f
 #define TFAnimate                       0.3f
 #define TFCorner                        5
 

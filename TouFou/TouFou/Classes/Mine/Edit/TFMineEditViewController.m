@@ -62,7 +62,7 @@ static NSString *strIdentifier2 = @"TFMineMenuHeadTableViewCell";
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     if (section == 0) {
-        return 0.5;
+        return TFHeightSeparator;
     }
     return 0;
 }
