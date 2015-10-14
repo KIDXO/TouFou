@@ -11,6 +11,11 @@
 
 static NSString *strIdentifier = @"TFInfoAdviceContentCell";
 
+@interface TFInfoAdviceTableView ()
+<TFInfoAdviceContentDelegate>
+
+@end
+
 @implementation TFInfoAdviceTableView
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -107,12 +112,14 @@ static NSString *strIdentifier = @"TFInfoAdviceContentCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     TFInfoAdviceContentCell *cell = [tableView dequeueReusableCellWithIdentifier:strIdentifier];
+    cell.tag = indexPath.row;
+    cell.delegate = self;
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    
 }
 
 #pragma mark -
@@ -121,6 +128,15 @@ static NSString *strIdentifier = @"TFInfoAdviceContentCell";
 {
     if (_delegate && [_delegate respondsToSelector:@selector(TFInfoAdviceTableView:)]) {
         [_delegate TFInfoAdviceTableView:scrollView];
+    }
+}
+
+#pragma mark -
+#pragma mark Delegate
+- (void)TFInfoAdviceContentActionRead:(NSInteger)index
+{
+    if (_delegate && [_delegate respondsToSelector:@selector(TFInfoAdviceTableViewArticle)]) {
+        [_delegate TFInfoAdviceTableViewArticle];
     }
 }
 

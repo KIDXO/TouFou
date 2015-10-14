@@ -11,6 +11,7 @@
 @protocol TFInfoAdviceTableViewDelegate <NSObject>
 
 - (void)TFInfoAdviceTableView:(UIScrollView *)scrollView;
+- (void)TFInfoAdviceTableViewArticle;
 
 @end
 

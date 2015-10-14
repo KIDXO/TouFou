@@ -34,6 +34,6 @@
 #define TFColor_Text_Light              [UIColor colorWithHex:0xA9A9A9]
 #define TFColor_Button                  [UIColor colorWithHex:0x76A6FD]
 #define TFColor_Separator               [UIColor colorWithWhite:1 alpha:0.2]
-
+#define TFColor_PlaceHolder             [UIColor colorWithRed:0 green:0 blue:0.0980392 alpha:0.22]
 
 #endif /* TFDefine_h */

@@ -8,6 +8,7 @@
 
 #import "TFInfoViewController.h"
 #import "TFInfoWriteViewController.h"
+#import "TFInfoArticleViewController.h"
 
 #define  TFTableViewBottom  (_labTitle.height + 260 - 35)
 #define  TFTableViewNoneY   (TFHeight - TFHeightHead - TFHeightStatusBar - TFTableViewBottom - 150) / 2 + TFTableViewBottom + 10
@@ -265,6 +266,12 @@
 - (void)TFInfoCommentTableView:(UIScrollView *)scrollView
 {
     [self TFInfoTableView:scrollView];
+}
+
+- (void)TFInfoAdviceTableViewArticle
+{
+    TFInfoArticleViewController *vc = [[TFInfoArticleViewController alloc] initWithNibName:@"TFInfoArticleViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

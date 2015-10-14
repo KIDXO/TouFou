@@ -33,6 +33,15 @@
 		0782F9AE1BCCD410007A9943 /* TFInfoCommentResponseInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0782F9AD1BCCD410007A9943 /* TFInfoCommentResponseInfo.m */; settings = {ASSET_TAGS = (); }; };
 		0782F9B81BCD04CC007A9943 /* TFInfoWriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0782F9B61BCD04CC007A9943 /* TFInfoWriteViewController.m */; settings = {ASSET_TAGS = (); }; };
 		0782F9B91BCD04CC007A9943 /* TFInfoWriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0782F9B71BCD04CC007A9943 /* TFInfoWriteViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		0786743F1BCE15D1001ED10A /* TFInfoArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0786743D1BCE15D1001ED10A /* TFInfoArticleViewController.m */; settings = {ASSET_TAGS = (); }; };
+		078674401BCE15D1001ED10A /* TFInfoArticleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0786743E1BCE15D1001ED10A /* TFInfoArticleViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		0786744E1BCE1A66001ED10A /* TFInfoArticleContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0786744C1BCE1A66001ED10A /* TFInfoArticleContentCell.m */; settings = {ASSET_TAGS = (); }; };
+		0786744F1BCE1A66001ED10A /* TFInfoArticleContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0786744D1BCE1A66001ED10A /* TFInfoArticleContentCell.xib */; settings = {ASSET_TAGS = (); }; };
+		078674521BCE225E001ED10A /* TFInfoArticleContentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 078674511BCE225E001ED10A /* TFInfoArticleContentInfo.m */; settings = {ASSET_TAGS = (); }; };
+		078674561BCE264F001ED10A /* TFInfoArticleHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 078674541BCE264F001ED10A /* TFInfoArticleHeadCell.m */; settings = {ASSET_TAGS = (); }; };
+		078674571BCE264F001ED10A /* TFInfoArticleHeadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 078674551BCE264F001ED10A /* TFInfoArticleHeadCell.xib */; settings = {ASSET_TAGS = (); }; };
+		0786745B1BCE2708001ED10A /* TFInfoArticleAuthorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 078674591BCE2708001ED10A /* TFInfoArticleAuthorCell.m */; settings = {ASSET_TAGS = (); }; };
+		0786745C1BCE2708001ED10A /* TFInfoArticleAuthorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0786745A1BCE2708001ED10A /* TFInfoArticleAuthorCell.xib */; settings = {ASSET_TAGS = (); }; };
 		07B946781BCBAB95003D2B4E /* TFInfoIntroDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B9466B1BCBAB95003D2B4E /* TFInfoIntroDetailCell.m */; settings = {ASSET_TAGS = (); }; };
 		07B946791BCBAB95003D2B4E /* TFInfoIntroDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B9466C1BCBAB95003D2B4E /* TFInfoIntroDetailCell.xib */; settings = {ASSET_TAGS = (); }; };
 		07B9467A1BCBAB95003D2B4E /* TFInfoIntroParamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B9466E1BCBAB95003D2B4E /* TFInfoIntroParamCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -284,6 +293,20 @@
 		0782F9B51BCD04CC007A9943 /* TFInfoWriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoWriteViewController.h; sourceTree = "<group>"; };
 		0782F9B61BCD04CC007A9943 /* TFInfoWriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoWriteViewController.m; sourceTree = "<group>"; };
 		0782F9B71BCD04CC007A9943 /* TFInfoWriteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFInfoWriteViewController.xib; sourceTree = "<group>"; };
+		0786743C1BCE15D1001ED10A /* TFInfoArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoArticleViewController.h; sourceTree = "<group>"; };
+		0786743D1BCE15D1001ED10A /* TFInfoArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoArticleViewController.m; sourceTree = "<group>"; };
+		0786743E1BCE15D1001ED10A /* TFInfoArticleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFInfoArticleViewController.xib; sourceTree = "<group>"; };
+		0786744B1BCE1A66001ED10A /* TFInfoArticleContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoArticleContentCell.h; sourceTree = "<group>"; };
+		0786744C1BCE1A66001ED10A /* TFInfoArticleContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoArticleContentCell.m; sourceTree = "<group>"; };
+		0786744D1BCE1A66001ED10A /* TFInfoArticleContentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFInfoArticleContentCell.xib; sourceTree = "<group>"; };
+		078674501BCE225E001ED10A /* TFInfoArticleContentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoArticleContentInfo.h; sourceTree = "<group>"; };
+		078674511BCE225E001ED10A /* TFInfoArticleContentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoArticleContentInfo.m; sourceTree = "<group>"; };
+		078674531BCE264F001ED10A /* TFInfoArticleHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoArticleHeadCell.h; sourceTree = "<group>"; };
+		078674541BCE264F001ED10A /* TFInfoArticleHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoArticleHeadCell.m; sourceTree = "<group>"; };
+		078674551BCE264F001ED10A /* TFInfoArticleHeadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFInfoArticleHeadCell.xib; sourceTree = "<group>"; };
+		078674581BCE2708001ED10A /* TFInfoArticleAuthorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoArticleAuthorCell.h; sourceTree = "<group>"; };
+		078674591BCE2708001ED10A /* TFInfoArticleAuthorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoArticleAuthorCell.m; sourceTree = "<group>"; };
+		0786745A1BCE2708001ED10A /* TFInfoArticleAuthorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFInfoArticleAuthorCell.xib; sourceTree = "<group>"; };
 		07B9466A1BCBAB95003D2B4E /* TFInfoIntroDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoIntroDetailCell.h; sourceTree = "<group>"; };
 		07B9466B1BCBAB95003D2B4E /* TFInfoIntroDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoIntroDetailCell.m; sourceTree = "<group>"; };
 		07B9466C1BCBAB95003D2B4E /* TFInfoIntroDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFInfoIntroDetailCell.xib; sourceTree = "<group>"; };
@@ -863,6 +886,27 @@
 				0782F9B71BCD04CC007A9943 /* TFInfoWriteViewController.xib */,
 			);
 			path = Write;
+			sourceTree = "<group>";
+		};
+		0786743B1BCE15C0001ED10A /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				0786743C1BCE15D1001ED10A /* TFInfoArticleViewController.h */,
+				0786743D1BCE15D1001ED10A /* TFInfoArticleViewController.m */,
+				0786743E1BCE15D1001ED10A /* TFInfoArticleViewController.xib */,
+				078674531BCE264F001ED10A /* TFInfoArticleHeadCell.h */,
+				078674541BCE264F001ED10A /* TFInfoArticleHeadCell.m */,
+				078674551BCE264F001ED10A /* TFInfoArticleHeadCell.xib */,
+				0786744B1BCE1A66001ED10A /* TFInfoArticleContentCell.h */,
+				0786744C1BCE1A66001ED10A /* TFInfoArticleContentCell.m */,
+				0786744D1BCE1A66001ED10A /* TFInfoArticleContentCell.xib */,
+				078674581BCE2708001ED10A /* TFInfoArticleAuthorCell.h */,
+				078674591BCE2708001ED10A /* TFInfoArticleAuthorCell.m */,
+				0786745A1BCE2708001ED10A /* TFInfoArticleAuthorCell.xib */,
+				078674501BCE225E001ED10A /* TFInfoArticleContentInfo.h */,
+				078674511BCE225E001ED10A /* TFInfoArticleContentInfo.m */,
+			);
+			path = Article;
 			sourceTree = "<group>";
 		};
 		07B946691BCBAB95003D2B4E /* Intro */ = {
@@ -1616,6 +1660,7 @@
 				07DC4CC51BC97E2800211716 /* TFInfoViewController.m */,
 				07DC4CC61BC97E2800211716 /* TFInfoViewController.xib */,
 				0782F9B41BCD04BC007A9943 /* Write */,
+				0786743B1BCE15C0001ED10A /* Article */,
 				07B946691BCBAB95003D2B4E /* Intro */,
 				07B946811BCBAEC0003D2B4E /* Score */,
 				07B946951BCBBFBD003D2B4E /* Advice */,
@@ -1801,6 +1846,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07EEA0F91BC90E6200ABFD6E /* TFMessagePushListViewController.xib in Resources */,
+				0786745C1BCE2708001ED10A /* TFInfoArticleAuthorCell.xib in Resources */,
 				07C4DADA1BB9422200828031 /* TFMonitorViewController.xib in Resources */,
 				07DC4CC81BC97E2800211716 /* TFInfoViewController.xib in Resources */,
 				07C4DAE41BB9423700828031 /* TFAnalystViewController.xib in Resources */,
@@ -1832,10 +1878,12 @@
 				074C38A81BC786AA00040373 /* TFMineFansTableViewCell.xib in Resources */,
 				072B53441BC606DA00EF8432 /* TFMonitorTableViewCell.xib in Resources */,
 				07B946801BCBAB95003D2B4E /* TFInfoIntroValueCell.xib in Resources */,
+				0786744F1BCE1A66001ED10A /* TFInfoArticleContentCell.xib in Resources */,
 				07EEA0E41BC8E7EC00ABFD6E /* TFMessageUpdateViewController.xib in Resources */,
 				07C4DAED1BB9436700828031 /* TFSideTableViewCell.xib in Resources */,
 				07C709181BBA8EDC005E1CD3 /* TFMineViewController.xib in Resources */,
 				074C38B41BC79D6A00040373 /* TFMineDraftViewController.xib in Resources */,
+				078674401BCE15D1001ED10A /* TFInfoArticleViewController.xib in Resources */,
 				07EEA0D41BC8E05600ABFD6E /* TFMessageGoodViewController.xib in Resources */,
 				074C38B91BC79E4400040373 /* TFMineDraftTableViewCell.xib in Resources */,
 				07C7090C1BBA5DEB005E1CD3 /* TFMessageTableViewCell.xib in Resources */,
@@ -1844,6 +1892,7 @@
 				072342DC1BB8DB9000837FF7 /* Main.storyboard in Resources */,
 				074C38A31BC7834C00040373 /* TFMineFansViewController.xib in Resources */,
 				07B9467B1BCBAB95003D2B4E /* TFInfoIntroParamCell.xib in Resources */,
+				078674571BCE264F001ED10A /* TFInfoArticleHeadCell.xib in Resources */,
 				07EEA0F41BC907E800ABFD6E /* TFMessagePushTableViewCell.xib in Resources */,
 				07EEA0C61BC8CD8400ABFD6E /* TFMessageCommentViewController.xib in Resources */,
 				07EEA0EF1BC9079000ABFD6E /* TFMessagePushViewController.xib in Resources */,
@@ -1881,6 +1930,7 @@
 				07C4DA291BB9043700828031 /* UIApplication+NetworkActivityIndicator.m in Sources */,
 				07C4DA561BB9043700828031 /* UIView+Frame.m in Sources */,
 				07C4DA7B1BB9043700828031 /* SDWebImageDownloader.m in Sources */,
+				078674561BCE264F001ED10A /* TFInfoArticleHeadCell.m in Sources */,
 				07C4DA141BB9043700828031 /* AFURLConnectionOperation.m in Sources */,
 				07C4DA9C1BB910E100828031 /* TFHomeViewController.m in Sources */,
 				07C4DA651BB9043700828031 /* MJRefreshComponent.m in Sources */,
@@ -1899,6 +1949,7 @@
 				07C4DA7E1BB9043700828031 /* SDWebImagePrefetcher.m in Sources */,
 				07C709171BBA8EDC005E1CD3 /* TFMineViewController.m in Sources */,
 				07C4DA231BB9043700828031 /* NSString+Trims.m in Sources */,
+				0786743F1BCE15D1001ED10A /* TFInfoArticleViewController.m in Sources */,
 				07DC4CCC1BC9803E00211716 /* TFVCManager.m in Sources */,
 				07C4DA7F1BB9043700828031 /* UIButton+WebCache.m in Sources */,
 				07C4DA4B1BB9043700828031 /* UINavigationItem+Lock.m in Sources */,
@@ -2007,6 +2058,7 @@
 				07EEA0F81BC90E6200ABFD6E /* TFMessagePushListViewController.m in Sources */,
 				07B946881BCBB0CD003D2B4E /* TFInfoScoreValueCell.m in Sources */,
 				07EEA0F31BC907E800ABFD6E /* TFMessagePushTableViewCell.m in Sources */,
+				0786745B1BCE2708001ED10A /* TFInfoArticleAuthorCell.m in Sources */,
 				07C4DA511BB9043700828031 /* UITextField+Shake.m in Sources */,
 				07C4DA671BB9043700828031 /* MJRefreshHeader.m in Sources */,
 				07C4DA601BB9043700828031 /* JVFloatingDrawerSpringAnimator.m in Sources */,
@@ -2019,6 +2071,7 @@
 				07C4DA751BB9043700828031 /* UIView+MJExtension.m in Sources */,
 				07C709211BBA9065005E1CD3 /* TFMineMenuTableViewCell.m in Sources */,
 				07C4DA4F1BB9043700828031 /* UITextField+History.m in Sources */,
+				078674521BCE225E001ED10A /* TFInfoArticleContentInfo.m in Sources */,
 				07C4DA331BB9043700828031 /* UIColor+Web.m in Sources */,
 				07C4DA401BB9043700828031 /* UIImageView+Letters.m in Sources */,
 				07EEA0DD1BC8E12900ABFD6E /* TFMessageGoodTableViewCell.m in Sources */,
@@ -2034,6 +2087,7 @@
 				07B9467A1BCBAB95003D2B4E /* TFInfoIntroParamCell.m in Sources */,
 				07C4DA6D1BB9043700828031 /* MJRefreshBackStateFooter.m in Sources */,
 				07C4DA8C1BB9043700828031 /* NSDictionary_JSONExtensions.m in Sources */,
+				0786744E1BCE1A66001ED10A /* TFInfoArticleContentCell.m in Sources */,
 				07C4DAA01BB911F800828031 /* UIBaseNavigationController.m in Sources */,
 				07EEA0C01BC8C24600ABFD6E /* TFHomeCategoryView.m in Sources */,
 				07C4DA1A1BB9043700828031 /* NSDate+Utilities.m in Sources */,

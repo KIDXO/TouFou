@@ -21,4 +21,11 @@
     [super setSelected:selected animated:animated];
 }
 
+- (IBAction)actionRead:(id)sender
+{
+    if (_delegate && [_delegate respondsToSelector:@selector(TFInfoAdviceContentActionRead:)]) {
+        [_delegate TFInfoAdviceContentActionRead:self.tag];
+    }
+}
+
 @end
