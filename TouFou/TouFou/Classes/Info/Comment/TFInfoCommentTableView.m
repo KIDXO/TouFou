@@ -8,9 +8,13 @@
 
 #import "TFInfoCommentTableView.h"
 #import "TFInfoCommentContentCell.h"
-#import "TFInfoCommentInfo.h"
 
 static NSString *strIdentifier = @"TFInfoCommentContentCell";
+
+@interface TFInfoCommentTableView ()
+<TFInfoCommentContentDelegate>
+
+@end
 
 @implementation TFInfoCommentTableView
 
@@ -219,8 +223,9 @@ static NSString *strIdentifier = @"TFInfoCommentContentCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     TFInfoCommentContentCell *cell = [tableView dequeueReusableCellWithIdentifier:strIdentifier];
-    [cell setTag:indexPath.row];
-    [cell setInfo:_aryInfo[indexPath.row]];
+    cell.delegate = self;
+    cell.tag = indexPath.row;
+    cell.info = _aryInfo[indexPath.row];
     return cell;
 }
 
@@ -235,6 +240,24 @@ static NSString *strIdentifier = @"TFInfoCommentContentCell";
 {
     if (_delegate && [_delegate respondsToSelector:@selector(TFInfoCommentTableView:)]) {
         [_delegate TFInfoCommentTableView:scrollView];
+    }
+}
+
+#pragma mark -
+#pragma mark Delegate
+- (void)TFInfoCommentContentReply:(NSInteger)index
+{
+    if (_delegate && [_delegate respondsToSelector:@selector(TFInfoCommentTableViewReply:)]) {
+        [_delegate TFInfoCommentTableViewReply:_aryInfo[index]];
+    }
+}
+
+- (void)TFInfoCommentContentReply:(NSInteger)index response:(NSInteger)tag
+{
+    if (_delegate && [_delegate respondsToSelector:@selector(TFInfoCommentTableViewReply:response:)]) {
+        TFInfoCommentInfo *info = _aryInfo[index];
+        TFInfoCommentResponseInfo *response = info.response[tag];
+        [_delegate TFInfoCommentTableViewReply:info response:response];
     }
 }
 

@@ -18,6 +18,7 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
 
 @implementation TFHomeViewController
 
+#pragma mark - LifeCycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -27,9 +28,6 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
     
     [self initData];
     [self initView];
-    
-    [self.tableView registerNib:[UINib nibWithNibName:@"TFHomeTableViewCell" bundle:nil]
-         forCellReuseIdentifier:strIdentifier];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
@@ -56,6 +54,8 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
     self.navigationItem.leftBarButtonItem = item;
 }
 
+#pragma mark -
+#pragma mark Initialization
 - (void)initData
 {
     self.arySource   = [[NSMutableArray alloc] initWithCapacity:0];
@@ -78,12 +78,17 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
     swipe.direction = UISwipeGestureRecognizerDirectionRight;
     [self.view addGestureRecognizer:swipe];
     
+    [self.tableView registerNib:[UINib nibWithNibName:@"TFHomeTableViewCell" bundle:nil]
+         forCellReuseIdentifier:strIdentifier];
+    
 //    UIVisualEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
 //    UIVisualEffectView *visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
 //    visualEffectView.frame = _imageView.bounds;
 //    [_imageView addSubview:visualEffectView];
 }
 
+#pragma mark -
+#pragma mark Action
 - (void)actionDrawer
 {
     [[AppDelegate sharedAppDelegate] actionDrawer:YES];
@@ -95,16 +100,31 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
         case 1:
         {
             [_tableCategory setInfo:_arySource   type:TFHomeCategoryTypeSource];
+            [UIView animateWithDuration:TFAnimate animations:^{
+                _imgSource.transform    = CGAffineTransformMakeRotation(M_PI);
+                _imgCategory.transform  = CGAffineTransformMakeRotation(0);
+                _imgPeriod.transform    = CGAffineTransformMakeRotation(0);
+            }];
         }
             break;
         case 2:
         {
             [_tableCategory setInfo:_aryCategory type:TFHomeCategoryTypeCategory];
+            [UIView animateWithDuration:TFAnimate animations:^{
+                _imgSource.transform    = CGAffineTransformMakeRotation(0);
+                _imgCategory.transform  = CGAffineTransformMakeRotation(M_PI);
+                _imgPeriod.transform    = CGAffineTransformMakeRotation(0);
+            }];
         }
             break;
         case 3:
         {
             [_tableCategory setInfo:_aryPeriod   type:TFHomeCategoryTypePeriod];
+            [UIView animateWithDuration:TFAnimate animations:^{
+                _imgSource.transform    = CGAffineTransformMakeRotation(0);
+                _imgCategory.transform  = CGAffineTransformMakeRotation(0);
+                _imgPeriod.transform    = CGAffineTransformMakeRotation(M_PI);
+            }];
         }
             break;
         default:
@@ -123,13 +143,18 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
 - (IBAction)actionCategoryClose:(UIButton *)sender
 {
     [UIView animateWithDuration:TFAnimate animations:^{
-        _tableCategory.origin = CGPointMake(0, - _tableCategory.height + 40);
+        _imgSource.transform    = CGAffineTransformMakeRotation(0);
+        _imgCategory.transform  = CGAffineTransformMakeRotation(0);
+        _imgPeriod.transform    = CGAffineTransformMakeRotation(0);
+        _tableCategory.origin   = CGPointMake(0, - _tableCategory.height + 40);
         _viewDark.alpha = 0;
     } completion:^(BOOL finished) {
         _viewDark.hidden = YES;
     }];
 }
 
+#pragma mark -
+#pragma mark Delegate
 - (void)TFHomeCategoryViewSelect:(id)info type:(TFHomeCategoryType)type
 {
     switch (type) {

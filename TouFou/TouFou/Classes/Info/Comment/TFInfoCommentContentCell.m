@@ -102,12 +102,16 @@
 
 - (IBAction)actionReply:(id)sender
 {
-    TFLog(@"actionReply");
+    if (_delegate && [_delegate respondsToSelector:@selector(TFInfoCommentContentReply:)]) {
+        [_delegate TFInfoCommentContentReply:self.tag];
+    }
 }
 
 - (IBAction)actionResponse:(UIButton *)sender
 {
-    TFLog(@"actionResponse: %@", [_info.response[sender.tag] responseFormat]);
+    if (_delegate && [_delegate respondsToSelector:@selector(TFInfoCommentContentReply:response:)]) {
+        [_delegate TFInfoCommentContentReply:self.tag response:sender.tag];
+    }
 }
 
 @end

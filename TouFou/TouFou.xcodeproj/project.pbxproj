@@ -17,6 +17,8 @@
 		072B53431BC606DA00EF8432 /* TFMonitorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 072B53411BC606DA00EF8432 /* TFMonitorTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		072B53441BC606DA00EF8432 /* TFMonitorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 072B53421BC606DA00EF8432 /* TFMonitorTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		072B53471BC632DA00EF8432 /* TFUserTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 072B53461BC632DA00EF8432 /* TFUserTableView.m */; settings = {ASSET_TAGS = (); }; };
+		072D89771BCE48B200A4A9AC /* HPGrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 072D89741BCE48B200A4A9AC /* HPGrowingTextView.m */; settings = {ASSET_TAGS = (); }; };
+		072D89781BCE48B200A4A9AC /* HPTextViewInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 072D89761BCE48B200A4A9AC /* HPTextViewInternal.m */; settings = {ASSET_TAGS = (); }; };
 		074C38A21BC7834C00040373 /* TFMineFansViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 074C38A01BC7834C00040373 /* TFMineFansViewController.m */; settings = {ASSET_TAGS = (); }; };
 		074C38A31BC7834C00040373 /* TFMineFansViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074C38A11BC7834C00040373 /* TFMineFansViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		074C38A71BC786AA00040373 /* TFMineFansTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 074C38A51BC786AA00040373 /* TFMineFansTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -268,6 +270,10 @@
 		072B53421BC606DA00EF8432 /* TFMonitorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFMonitorTableViewCell.xib; sourceTree = "<group>"; };
 		072B53451BC632DA00EF8432 /* TFUserTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFUserTableView.h; sourceTree = "<group>"; };
 		072B53461BC632DA00EF8432 /* TFUserTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFUserTableView.m; sourceTree = "<group>"; };
+		072D89731BCE48B200A4A9AC /* HPGrowingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPGrowingTextView.h; sourceTree = "<group>"; };
+		072D89741BCE48B200A4A9AC /* HPGrowingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPGrowingTextView.m; sourceTree = "<group>"; };
+		072D89751BCE48B200A4A9AC /* HPTextViewInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPTextViewInternal.h; sourceTree = "<group>"; };
+		072D89761BCE48B200A4A9AC /* HPTextViewInternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPTextViewInternal.m; sourceTree = "<group>"; };
 		074C389F1BC7834C00040373 /* TFMineFansViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFMineFansViewController.h; sourceTree = "<group>"; };
 		074C38A01BC7834C00040373 /* TFMineFansViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFMineFansViewController.m; sourceTree = "<group>"; };
 		074C38A11BC7834C00040373 /* TFMineFansViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFMineFansViewController.xib; sourceTree = "<group>"; };
@@ -831,6 +837,7 @@
 				07B9468A1BCBB280003D2B4E /* CHCircleGaugeView */,
 				07DF312C1BBBB2F800276990 /* DZNSegmentedControl */,
 				07DF31281BBBB1EB00276990 /* HMSegmentedControl */,
+				072D89721BCE48B200A4A9AC /* HPGrowingTextView */,
 				07C4D9A71BB9043600828031 /* JVFloatingDrawer */,
 				07C4D9AF1BB9043700828031 /* MJRefresh */,
 				07C4D9DC1BB9043700828031 /* SDWebImage */,
@@ -838,6 +845,17 @@
 				07C4DA071BB9043700828031 /* TouchJSON */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		072D89721BCE48B200A4A9AC /* HPGrowingTextView */ = {
+			isa = PBXGroup;
+			children = (
+				072D89731BCE48B200A4A9AC /* HPGrowingTextView.h */,
+				072D89741BCE48B200A4A9AC /* HPGrowingTextView.m */,
+				072D89751BCE48B200A4A9AC /* HPTextViewInternal.h */,
+				072D89761BCE48B200A4A9AC /* HPTextViewInternal.m */,
+			);
+			path = HPGrowingTextView;
 			sourceTree = "<group>";
 		};
 		074C389E1BC7833200040373 /* Fans */ = {
@@ -1989,6 +2007,7 @@
 				07C4DA421BB9043700828031 /* UILabel+AutoSize.m in Sources */,
 				07C4DA261BB9043700828031 /* NSURL+Param.m in Sources */,
 				0782F9B81BCD04CC007A9943 /* TFInfoWriteViewController.m in Sources */,
+				072D89771BCE48B200A4A9AC /* HPGrowingTextView.m in Sources */,
 				07B9468E1BCBB280003D2B4E /* CHCircleGaugeView.m in Sources */,
 				07DF311B1BBB737600276990 /* TFMineEditHeadTableViewCell.m in Sources */,
 				07C4DA371BB9043700828031 /* UIImage+Capture.m in Sources */,
@@ -2038,6 +2057,7 @@
 				07C4DAEE1BB9436700828031 /* TFSideViewController.m in Sources */,
 				07C4DA121BB9043700828031 /* AFNetworkReachabilityManager.m in Sources */,
 				072B53431BC606DA00EF8432 /* TFMonitorTableViewCell.m in Sources */,
+				072D89781BCE48B200A4A9AC /* HPTextViewInternal.m in Sources */,
 				07C4DA631BB9043700828031 /* MJRefreshAutoFooter.m in Sources */,
 				07C4DA7C1BB9043700828031 /* SDWebImageDownloaderOperation.m in Sources */,
 				07DF312B1BBBB1EB00276990 /* HMSegmentedControl.m in Sources */,

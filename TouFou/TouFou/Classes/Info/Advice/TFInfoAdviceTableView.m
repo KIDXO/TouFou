@@ -85,7 +85,7 @@ static NSString *strIdentifier = @"TFInfoAdviceContentCell";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-    return 10;
+    return TFHeightSeparator;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section

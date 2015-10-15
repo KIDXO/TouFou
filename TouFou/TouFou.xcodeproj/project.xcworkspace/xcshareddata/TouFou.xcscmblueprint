@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4205584138956E032BD1153B39AA4012FFD742A7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "8b355b4a-5af7-5841-a90f-b5977b974f8b++3589" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4205584138956E032BD1153B39AA4012FFD742A7" : 0,
+    "8b355b4a-5af7-5841-a90f-b5977b974f8b++3589" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F0C5C9FC-347D-4847-808B-87E4EA76E327",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4205584138956E032BD1153B39AA4012FFD742A7" : "TouFou\/",
+    "8b355b4a-5af7-5841-a90f-b5977b974f8b++3589" : "TouFou\/TouFou\/TouFou\/Library\/HPGrowingTextView\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TouFou",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TouFou\/TouFou.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/KIDXO\/TouFou.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4205584138956E032BD1153B39AA4012FFD742A7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.8.231:9443\/svn\/duoju",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8b355b4a-5af7-5841-a90f-b5977b974f8b++3589"
+    }
+  ]
+}

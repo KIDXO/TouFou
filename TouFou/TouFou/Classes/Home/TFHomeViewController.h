@@ -20,8 +20,13 @@
 @property (nonatomic, weak)   IBOutlet UIButton             *btnCategory;
 @property (nonatomic, weak)   IBOutlet UIButton             *btnPeriod;
 
+@property (nonatomic, weak)   IBOutlet UIImageView          *imgSource;
+@property (nonatomic, weak)   IBOutlet UIImageView          *imgCategory;
+@property (nonatomic, weak)   IBOutlet UIImageView          *imgPeriod;
+
 @property (nonatomic, weak)   IBOutlet UITableView          *tableView;
 @property (nonatomic, weak)   IBOutlet TFHomeCategoryView   *tableCategory;
+
 @property (nonatomic, weak)   IBOutlet UIView               *viewDark;
 
 @end

@@ -27,14 +27,19 @@ static NSString *strIdentifier = @"TFMessageTableViewCell";
     [self setTitle:@"消息"];
     [self setTitleCustom:@"消息页面"];
     [self createReturnButton];
-    
-    [self.tableView registerNib:[UINib nibWithNibName:@"TFMessageTableViewCell" bundle:nil]
-         forCellReuseIdentifier:strIdentifier];
+        
+    [self initView];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+- (void)initView
+{
+    [self.tableView registerNib:[UINib nibWithNibName:@"TFMessageTableViewCell" bundle:nil]
+         forCellReuseIdentifier:strIdentifier];
 }
 
 #pragma mark -

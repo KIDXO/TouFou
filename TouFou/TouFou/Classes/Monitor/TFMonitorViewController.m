@@ -25,15 +25,20 @@ static NSString *strIdentifier = @"TFMonitorTableViewCell";
     [self setTitleCustom:@"监控设置"];
     [self createReturnButton];
     [self setFd_interactivePopDisabled:YES];
-    [self initData];
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"TFMonitorTableViewCell" bundle:nil]
-         forCellReuseIdentifier:strIdentifier];
+    [self initView];
+    [self initData];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+- (void)initView
+{
+    [self.tableView registerNib:[UINib nibWithNibName:@"TFMonitorTableViewCell" bundle:nil]
+         forCellReuseIdentifier:strIdentifier];
 }
 
 - (void)initData

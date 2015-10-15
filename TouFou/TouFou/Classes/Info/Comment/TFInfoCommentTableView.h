@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TFInfoCommentInfo.h"
 
 @protocol TFInfoCommentTableViewDelegate <NSObject>
 
 - (void)TFInfoCommentTableView:(UIScrollView *)scrollView;
+- (void)TFInfoCommentTableViewReply:(TFInfoCommentInfo *)info;
+- (void)TFInfoCommentTableViewReply:(TFInfoCommentInfo *)info response:(TFInfoCommentResponseInfo *)response;
 
 @end
 

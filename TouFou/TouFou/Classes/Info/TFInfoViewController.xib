@@ -17,6 +17,8 @@
                 <outlet property="tableViewIntro" destination="3wW-4w-0cV" id="wnU-Bv-Hhi"/>
                 <outlet property="tableViewScore" destination="raT-e8-Jif" id="fLm-oM-sjG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewComment" destination="1MR-nr-vqY" id="hpt-uN-9Eo"/>
+                <outlet property="viewDark" destination="HKL-pV-PaK" id="uZ3-id-6nT"/>
                 <outlet property="viewInfo" destination="m1Q-BG-qsK" id="o8Z-bN-7zT"/>
                 <outlet property="viewLine" destination="b3c-U1-qKa" id="WRb-oj-qau"/>
                 <outlet property="viewSegment" destination="pCx-oh-28N" id="ctU-bN-YNK"/>
@@ -107,12 +109,46 @@
                         <outlet property="delegate" destination="-1" id="3h0-sk-gJd"/>
                     </connections>
                 </scrollView>
+                <view hidden="YES" alpha="0.0" contentMode="scaleToFill" id="HKL-pV-PaK">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZIY-qG-7Gi">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <connections>
+                                <action selector="actionResign:" destination="-1" eventType="touchUpInside" id="Hl9-E0-3Ig"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="1MR-nr-vqY">
+                    <rect key="frame" x="0.0" y="568" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TFProjectReplyWrite" id="Gqk-WD-irW">
+                            <rect key="frame" x="5" y="8" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j0q-ev-zxo">
+                            <rect key="frame" x="270" y="0.0" width="50" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="发送"/>
+                            <connections>
+                                <action selector="actionSend:" destination="-1" eventType="touchUpInside" id="ezA-A7-8G6"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <point key="canvasLocation" x="103" y="263"/>
         </view>
     </objects>
     <resources>
+        <image name="TFProjectReplyWrite" width="30" height="30"/>
         <image name="TFProjectWrite" width="30" height="22"/>
     </resources>
 </document>

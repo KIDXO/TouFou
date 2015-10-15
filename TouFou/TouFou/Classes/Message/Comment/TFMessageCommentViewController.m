@@ -24,16 +24,20 @@ static NSString *strIdentifier = @"TFMessageCommentTableViewCell";
     [self setTitleCustom:@"评论页面"];
     [self createReturnButton];
     
+    [self initView];
     [self initData];
     [self reloadData];
-    
-    [self.tableView registerNib:[UINib nibWithNibName:@"TFMessageCommentTableViewCell" bundle:nil]
-         forCellReuseIdentifier:strIdentifier];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+- (void)initView
+{
+    [self.tableView registerNib:[UINib nibWithNibName:@"TFMessageCommentTableViewCell" bundle:nil]
+         forCellReuseIdentifier:strIdentifier];
 }
 
 - (void)initData

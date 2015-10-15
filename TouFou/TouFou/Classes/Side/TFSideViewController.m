@@ -31,9 +31,6 @@ static NSString *strIdentifier = @"TFSideTableViewCell";
     [super viewDidLoad];
     [self initView];
     [self initData];
-    
-    [self.tableView registerNib:[UINib nibWithNibName:@"TFSideTableViewCell" bundle:nil]
-         forCellReuseIdentifier:strIdentifier];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,6 +42,9 @@ static NSString *strIdentifier = @"TFSideTableViewCell";
 {
     _imgHead.layer.cornerRadius = _imgHead.height / 2;
     _imgHead.layer.masksToBounds = true;
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"TFSideTableViewCell" bundle:nil]
+         forCellReuseIdentifier:strIdentifier];
 }
 
 - (void)initData

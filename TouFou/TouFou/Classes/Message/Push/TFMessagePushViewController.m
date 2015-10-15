@@ -25,13 +25,18 @@ static NSString *strIdentifier = @"TFMessagePushTableViewCell";
     [self setTitleCustom:@"监控通知"];
     [self createReturnButton];
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"TFMessagePushTableViewCell" bundle:nil]
-         forCellReuseIdentifier:strIdentifier];
+    [self initView];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+- (void)initView
+{
+    [self.tableView registerNib:[UINib nibWithNibName:@"TFMessagePushTableViewCell" bundle:nil]
+         forCellReuseIdentifier:strIdentifier];
 }
 
 #pragma mark -

@@ -14,6 +14,7 @@
 
 @implementation AppDelegate
 
+#pragma mark - LifeCycle
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     return YES;
@@ -23,14 +24,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = self.drawerViewController;
+    
     [self initViewController];
+    [self initNotification];
     
     [self.window makeKeyAndVisible];
-    
-    [TFNotificationCenter addObserver:self
-                             selector:@selector(pushInfoViewController:)
-                                 name:TFNotificationInfo
-                               object:nil];
     
     return YES;
 }
@@ -95,6 +93,15 @@
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
     
+}
+
+#pragma mark - Initialization
+- (void)initNotification
+{
+    [TFNotificationCenter addObserver:self
+                             selector:@selector(pushInfoViewController:)
+                                 name:TFNotificationInfo
+                               object:nil];
 }
 
 #pragma mark - VCManager

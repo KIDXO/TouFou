@@ -26,13 +26,18 @@ static NSString *strIdentifier = @"TFAnalystTableViewCell";
     [self createReturnButton];
     [self createCustomButton:@"申请" target:self action:@selector(actionApply)];
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"TFAnalystTableViewCell" bundle:nil]
-         forCellReuseIdentifier:strIdentifier];
+    [self initView];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+- (void)initView
+{
+    [self.tableView registerNib:[UINib nibWithNibName:@"TFAnalystTableViewCell" bundle:nil]
+         forCellReuseIdentifier:strIdentifier];
 }
 
 - (void)actionApply

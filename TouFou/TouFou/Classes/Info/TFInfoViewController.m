@@ -19,6 +19,7 @@
 
 @implementation TFInfoViewController
 
+#pragma mark - LifeCycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -35,6 +36,37 @@
     [super viewWillLayoutSubviews];
     
     [_viewSegment addSubview:self.controlSegment];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self an_subscribeKeyboardWithAnimations:^(CGRect keyboardRect, NSTimeInterval duration, BOOL isShowing) {
+        if (isShowing) {
+            _viewDark.hidden = NO;
+            _viewDark.alpha = 1;
+            CGRect frame = _viewComment.frame;
+            frame.origin.y = self.view.frame.size.height - frame.size.height - keyboardRect.size.height;
+            _viewComment.frame = frame;
+        }
+        else {
+            _viewDark.alpha = 0;
+            _viewDark.hidden = YES;
+            CGRect frame = _viewComment.frame;
+            frame.origin.y = self.view.frame.size.height;
+            _viewComment.frame = frame;
+        }
+    } completion:^(BOOL finished) {
+        
+    }];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [self an_unsubscribeKeyboard];
 }
 
 - (void)didReceiveMemoryWarning
@@ -69,6 +101,8 @@
     self.navigationItem.rightBarButtonItems = @[item3,item2,item1];
 }
 
+#pragma mark -
+#pragma mark Initialization
 - (void)initView
 {
     CGFloat height = [_labTitle.text heightWithFont:[UIFont systemFontOfSize:15]
@@ -91,6 +125,23 @@
     
     _scrollViewTable.contentSize = CGSizeMake(TFWidth * 4, 0);
     
+    _textComment = [[HPGrowingTextView alloc] initWithFrame:CGRectMake(40, 5, TFWidth - 90, 30)];
+    _textComment.layer.borderWidth = 0.5;
+    _textComment.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    _textComment.layer.cornerRadius = 5;
+    _textComment.layer.masksToBounds = true;
+    _textComment.isScrollable = NO;
+    _textComment.contentInset = UIEdgeInsetsMake(0, 5, 0, 5);
+    _textComment.minNumberOfLines = 1;
+    _textComment.maxNumberOfLines = 5;
+    _textComment.returnKeyType = UIReturnKeySend;
+    _textComment.font = [UIFont systemFontOfSize:15.0f];
+    _textComment.delegate = self;
+    _textComment.internalTextView.scrollIndicatorInsets = UIEdgeInsetsMake(5, 0, 5, 0);
+    _textComment.backgroundColor = [UIColor whiteColor];
+    _textComment.placeholder = @"你有什么想说的吗？";
+    [_viewComment addSubview:_textComment];
+    
     if (!_imgCommentNone) {
          _imgCommentNone = [[UIImageView alloc] initWithFrame:CGRectMake((TFWidth - 150) / 2, TFTableViewNoneY, 150, 150)];
          _imgCommentNone.image = [UIImage imageNamed:@"TFProjectReplyNone"];
@@ -99,6 +150,8 @@
     }
 }
 
+#pragma mark -
+#pragma mark Action
 - (void)actionFavorite:(UIButton *)sender
 {
     
@@ -113,6 +166,43 @@
 {
     TFInfoWriteViewController *vc = [[TFInfoWriteViewController alloc] initWithNibName:@"TFInfoWriteViewController" bundle:nil];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)actionSend:(id)sender
+{
+    if (_textComment.text.length > 0) {
+        NSString *str = [_textComment.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        TFLog(@"actionSend: %@",str);
+        
+//        if (self.iTargetID > 0) {
+//            [self requestComment:str to:[NSString stringWithFormat:@"%ld",(long)self.iTargetID]];
+//        }
+//        else {
+//            [self requestComment:str to:@""];
+//        }
+    }
+}
+
+- (IBAction)actionResign:(id)sender
+{
+    [_textComment resignFirstResponder];
+}
+
+#pragma mark -
+#pragma mark TextField
+- (BOOL)growingTextViewShouldBeginEditing:(HPGrowingTextView *)growingTextView
+{
+    return YES;
+}
+
+- (void)growingTextView:(HPGrowingTextView *)growingTextView willChangeHeight:(float)height
+{
+    float diff = (growingTextView.frame.size.height - height);
+    
+    CGRect r = _viewComment.frame;
+    r.size.height -= diff;
+    r.origin.y += diff;
+    _viewComment.frame = r;
 }
 
 #pragma mark -
@@ -224,6 +314,8 @@
     }
 }
 
+#pragma mark -
+#pragma mark Delegate
 - (void)TFInfoTableView:(UIScrollView *)scrollView
 {
     CGFloat y = scrollView.contentOffset.y;
@@ -272,6 +364,18 @@
 {
     TFInfoArticleViewController *vc = [[TFInfoArticleViewController alloc] initWithNibName:@"TFInfoArticleViewController" bundle:nil];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)TFInfoCommentTableViewReply:(TFInfoCommentInfo *)info
+{
+    TFLog(@"TFInfoCommentTableViewReply: %@",info.comment);
+    [_textComment becomeFirstResponder];
+}
+
+- (void)TFInfoCommentTableViewReply:(TFInfoCommentInfo *)info response:(TFInfoCommentResponseInfo *)response
+{
+    TFLog(@"TFInfoCommentTableViewReply:response: %@\n%@",info.name,response.name);
+    [_textComment becomeFirstResponder];
 }
 
 @end

@@ -24,10 +24,9 @@ static NSString *strIdentifier = @"TFMineDraftTableViewCell";
     [self setTitleCustom:@"我的草稿"];
     [self createReturnButton];
     [self createCustomButton:@"编辑" target:self action:@selector(actionEdit)];
-    [self initData];
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"TFMineDraftTableViewCell" bundle:nil]
-         forCellReuseIdentifier:strIdentifier];
+    [self initView];
+    [self initData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,6 +37,12 @@ static NSString *strIdentifier = @"TFMineDraftTableViewCell";
 - (void)initData
 {
     self.aryListSelect = [[NSMutableArray alloc] initWithCapacity:0];
+}
+
+- (void)initView
+{
+    [self.tableView registerNib:[UINib nibWithNibName:@"TFMineDraftTableViewCell" bundle:nil]
+         forCellReuseIdentifier:strIdentifier];
 }
 
 - (void)actionEdit
@@ -55,6 +60,7 @@ static NSString *strIdentifier = @"TFMineDraftTableViewCell";
 
 - (void)actionEditCancel
 {
+    [self.aryListSelect removeAllObjects];
     [self.tableView setEditing:NO animated:YES];
     [self createCustomButton:@"编辑" target:self action:@selector(actionEdit)];
     [UIView animateWithDuration:TFAnimate animations:^{
@@ -84,7 +90,7 @@ static NSString *strIdentifier = @"TFMineDraftTableViewCell";
 
 - (IBAction)actionSelectDelete:(id)sender
 {
-    
+    TFLog(@"%@",self.aryListSelect);
 }
 
 #pragma mark -
@@ -133,12 +139,19 @@ static NSString *strIdentifier = @"TFMineDraftTableViewCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self.aryListSelect addObject:indexPath];
+    if (tableView.editing) {
+        [self.aryListSelect addObject:indexPath];
+    }
+    else {
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    }
 }
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self.aryListSelect removeObject:indexPath];
+    if (tableView.editing) {
+        [self.aryListSelect removeObject:indexPath];
+    }
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

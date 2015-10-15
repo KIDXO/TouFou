@@ -12,9 +12,11 @@
 #import "TFInfoScoreTableView.h"
 #import "TFInfoAdviceTableView.h"
 #import "TFInfoCommentTableView.h"
+#import "HPGrowingTextView.h"
 
 @interface TFInfoViewController : UIBaseViewController
 <DZNSegmentedControlDelegate,
+ HPGrowingTextViewDelegate,
  TFInfoIntroTableViewDelegate,
  TFInfoScoreTableViewDelegate,
  TFInfoAdviceTableViewDelegate,
@@ -26,7 +28,11 @@
 @property (nonatomic, weak)   IBOutlet UIView                   *viewLine;
 
 @property (nonatomic, weak)   IBOutlet UIView                   *viewInfo;
+@property (nonatomic, weak)   IBOutlet UIView                   *viewDark;
 @property (nonatomic, weak)   IBOutlet UIView                   *viewSegment;
+@property (nonatomic, weak)   IBOutlet UIView                   *viewComment;
+
+@property (nonatomic, strong)          HPGrowingTextView        *textComment;
 
 @property (nonatomic, weak)   IBOutlet UIScrollView             *scrollView;
 @property (nonatomic, weak)   IBOutlet UIScrollView             *scrollViewTable;

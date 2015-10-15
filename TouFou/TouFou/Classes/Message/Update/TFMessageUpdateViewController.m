@@ -8,6 +8,7 @@
 
 #import "TFMessageUpdateViewController.h"
 #import "TFMessageUpdateTableViewCell.h"
+#import "TFInfoArticleViewController.h"
 
 static NSString *strIdentifier = @"TFMessageUpdateTableViewCell";
 
@@ -24,13 +25,18 @@ static NSString *strIdentifier = @"TFMessageUpdateTableViewCell";
     [self setTitleCustom:@"关注更新"];
     [self createReturnButton];
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"TFMessageUpdateTableViewCell" bundle:nil]
-         forCellReuseIdentifier:strIdentifier];
+    [self initView];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+- (void)initView
+{
+    [self.tableView registerNib:[UINib nibWithNibName:@"TFMessageUpdateTableViewCell" bundle:nil]
+         forCellReuseIdentifier:strIdentifier];
 }
 
 #pragma mark -
@@ -78,6 +84,8 @@ static NSString *strIdentifier = @"TFMessageUpdateTableViewCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    TFInfoArticleViewController *vc = [[TFInfoArticleViewController alloc] initWithNibName:@"TFInfoArticleViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

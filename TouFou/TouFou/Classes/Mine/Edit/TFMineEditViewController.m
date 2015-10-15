@@ -27,15 +27,20 @@ static NSString *strIdentifier2 = @"TFMineMenuHeadTableViewCell";
     [self createReturnButton];
     [self createCustomButton:@"保存" target:self action:@selector(actionSave)];
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"TFMineEditHeadTableViewCell" bundle:nil]
-         forCellReuseIdentifier:strIdentifier1];
-    [self.tableView registerNib:[UINib nibWithNibName:@"TFMineMenuHeadTableViewCell" bundle:nil]
-         forCellReuseIdentifier:strIdentifier2];
+    [self initView];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+- (void)initView
+{
+    [self.tableView registerNib:[UINib nibWithNibName:@"TFMineEditHeadTableViewCell" bundle:nil]
+         forCellReuseIdentifier:strIdentifier1];
+    [self.tableView registerNib:[UINib nibWithNibName:@"TFMineMenuHeadTableViewCell" bundle:nil]
+         forCellReuseIdentifier:strIdentifier2];
 }
 
 - (void)actionSave

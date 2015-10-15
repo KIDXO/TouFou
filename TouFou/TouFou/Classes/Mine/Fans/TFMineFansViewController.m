@@ -34,13 +34,18 @@ static NSString *strIdentifier = @"TFMineFansTableViewCell";
     }
     [self createReturnButton];
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"TFMineFansTableViewCell" bundle:nil]
-         forCellReuseIdentifier:strIdentifier];
+    [self initView];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+- (void)initView
+{
+    [self.tableView registerNib:[UINib nibWithNibName:@"TFMineFansTableViewCell" bundle:nil]
+         forCellReuseIdentifier:strIdentifier];
 }
 
 #pragma mark -

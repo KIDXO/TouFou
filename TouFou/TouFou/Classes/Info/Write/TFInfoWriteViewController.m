@@ -26,13 +26,10 @@
     [self initView];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super didReceiveMemoryWarning];
-}
-
-- (void)initView
-{
+    [super viewWillAppear:animated];
+    
     [self an_subscribeKeyboardWithAnimations:^(CGRect keyboardRect, NSTimeInterval duration, BOOL isShowing) {
         if (!isShowing) {
             _textContent.height = self.view.height - 270;
@@ -44,6 +41,22 @@
                                   completion:^(BOOL finished) {
                                       
                                   }];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [self an_unsubscribeKeyboard];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+}
+
+- (void)initView
+{
     
     [_textContent setPlaceholder:@"撰写分析内容"];
 }
