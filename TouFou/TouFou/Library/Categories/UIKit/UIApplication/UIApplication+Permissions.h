@@ -4,9 +4,7 @@
 //
 //  Created by Jack Rostron on 12/01/2014.
 //  Copyright (c) 2014 Rostron. All rights reserved.
-//  https://github.com/JackRostron/UIApplication-Permissions
-//   Category on UIApplication that adds permission helpers
-
+//
 
 #import <UIKit/UIKit.h>
 

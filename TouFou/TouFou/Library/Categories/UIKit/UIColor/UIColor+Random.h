@@ -1,18 +1,20 @@
 //
 //  UIColor+Random.h
-//  iOS-Categories (https://github.com/shaojiankui/iOS-Categories)
+//  KID
 //
-//  Created by Jakey on 14/12/15.
-//  Copyright (c) 2014年 www.skyfox.org. All rights reserved.
+//  Created by KID on Future.
+//  Copyright © 2015年 KID. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 @interface UIColor (Random)
+
 /**
- *  @brief  随机颜色
+ *  @brief  获取随机颜色
  *
- *  @return UIColor
+ *  @return 颜色
  */
-+ (UIColor *)RandomColor;
++ (UIColor *)colorWithRandom;
+
 @end
