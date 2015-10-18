@@ -58,6 +58,12 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
 #pragma mark Initialization
 - (void)initData
 {
+    self.stateCategory  = TFHomeCategoryStateNone;
+    
+    self.indexSource    = 0;
+    self.indexCategory  = 0;
+    self.indexPeriod    = 0;
+    
     self.arySource   = [[NSMutableArray alloc] initWithCapacity:0];
     self.aryCategory = [[NSMutableArray alloc] initWithCapacity:0];
     self.aryPeriod   = [[NSMutableArray alloc] initWithCapacity:0];
@@ -99,32 +105,53 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
     switch (sender.tag) {
         case 1:
         {
-            [_tableCategory setInfo:_arySource   type:TFHomeCategoryTypeSource];
-            [UIView animateWithDuration:TFAnimate animations:^{
-                _imgSource.transform    = CGAffineTransformMakeRotation(M_PI);
-                _imgCategory.transform  = CGAffineTransformMakeRotation(0);
-                _imgPeriod.transform    = CGAffineTransformMakeRotation(0);
-            }];
+            if (_stateCategory != TFHomeCategoryStateSource) {
+                _stateCategory = TFHomeCategoryStateSource;
+                [_tableCategory setInfo:_arySource type:TFHomeCategoryTypeSource select:_indexSource];
+                [UIView animateWithDuration:TFAnimate animations:^{
+                    _imgSource.transform    = CGAffineTransformMakeRotation(M_PI);
+                    _imgCategory.transform  = CGAffineTransformMakeRotation(0);
+                    _imgPeriod.transform    = CGAffineTransformMakeRotation(0);
+                }];
+            }
+            else {
+                [self actionCategoryClose:nil];
+                return;
+            }
         }
             break;
         case 2:
         {
-            [_tableCategory setInfo:_aryCategory type:TFHomeCategoryTypeCategory];
-            [UIView animateWithDuration:TFAnimate animations:^{
-                _imgSource.transform    = CGAffineTransformMakeRotation(0);
-                _imgCategory.transform  = CGAffineTransformMakeRotation(M_PI);
-                _imgPeriod.transform    = CGAffineTransformMakeRotation(0);
-            }];
+            if (_stateCategory != TFHomeCategoryStateCategory) {
+                _stateCategory = TFHomeCategoryStateCategory;
+                [_tableCategory setInfo:_aryCategory type:TFHomeCategoryTypeCategory select:_indexCategory];
+                [UIView animateWithDuration:TFAnimate animations:^{
+                    _imgSource.transform    = CGAffineTransformMakeRotation(0);
+                    _imgCategory.transform  = CGAffineTransformMakeRotation(M_PI);
+                    _imgPeriod.transform    = CGAffineTransformMakeRotation(0);
+                }];
+            }
+            else {
+                [self actionCategoryClose:nil];
+                return;
+            }
         }
             break;
         case 3:
         {
-            [_tableCategory setInfo:_aryPeriod   type:TFHomeCategoryTypePeriod];
-            [UIView animateWithDuration:TFAnimate animations:^{
-                _imgSource.transform    = CGAffineTransformMakeRotation(0);
-                _imgCategory.transform  = CGAffineTransformMakeRotation(0);
-                _imgPeriod.transform    = CGAffineTransformMakeRotation(M_PI);
-            }];
+            if (_stateCategory != TFHomeCategoryStatePeriod) {
+                _stateCategory = TFHomeCategoryStatePeriod;
+                [_tableCategory setInfo:_aryPeriod type:TFHomeCategoryTypePeriod select:_indexPeriod];
+                [UIView animateWithDuration:TFAnimate animations:^{
+                    _imgSource.transform    = CGAffineTransformMakeRotation(0);
+                    _imgCategory.transform  = CGAffineTransformMakeRotation(0);
+                    _imgPeriod.transform    = CGAffineTransformMakeRotation(M_PI);
+                }];
+            }
+            else {
+                [self actionCategoryClose:nil];
+                return;
+            }
         }
             break;
         default:
@@ -150,26 +177,30 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
         _viewDark.alpha = 0;
     } completion:^(BOOL finished) {
         _viewDark.hidden = YES;
+        _stateCategory = TFHomeCategoryStateNone;
     }];
 }
 
 #pragma mark -
 #pragma mark Delegate
-- (void)TFHomeCategoryViewSelect:(id)info type:(TFHomeCategoryType)type
+- (void)TFHomeCategoryViewSelect:(id)info type:(TFHomeCategoryType)type select:(NSInteger)select
 {
     switch (type) {
         case TFHomeCategoryTypeSource:
         {
+             _indexSource   = select;
             [_btnSource   setTitle:info forState:UIControlStateNormal];
         }
             break;
         case TFHomeCategoryTypeCategory:
         {
+             _indexCategory = select;
             [_btnCategory setTitle:info forState:UIControlStateNormal];
         }
             break;
         case TFHomeCategoryTypePeriod:
         {
+             _indexPeriod   = select;
             [_btnPeriod   setTitle:info forState:UIControlStateNormal];
         }
             break;

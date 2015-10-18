@@ -44,10 +44,11 @@
     [self addSubview:_tableView];
 }
 
-- (void)setInfo:(NSArray *)ary type:(TFHomeCategoryType)type
+- (void)setInfo:(NSArray *)ary type:(TFHomeCategoryType)type select:(NSInteger)select
 {
     _aryInfo = ary;
     _type = type;
+    _select = select;
     [_tableView reloadData];
 }
 
@@ -98,7 +99,20 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:strIdentifier];
         cell.textLabel.textAlignment = NSTextAlignmentCenter;
+        
+        UIView *view = [[UIView alloc] initWithFrame:cell.frame];
+        view.backgroundColor = TFColor_Nav_Background;
+        cell.selectedBackgroundView = view;
+    }
+    if (indexPath.row == _select) {
+        cell.selected = YES;
+        cell.textLabel.textColor = [UIColor colorWithHex:0x7B101D];
+        cell.backgroundColor = TFColor_Nav_Background;
+    }
+    else {
+        cell.selected = NO;
         cell.textLabel.textColor = TFColor_Text_Dark;
+        cell.backgroundColor = [UIColor whiteColor];
     }
     cell.textLabel.text = _aryInfo[indexPath.row];
     return cell;
@@ -106,10 +120,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (_delegate && [_delegate respondsToSelector:@selector(TFHomeCategoryViewSelect:type:)]) {
-        [_delegate TFHomeCategoryViewSelect:_aryInfo[indexPath.row] type:_type];
+    if (_delegate && [_delegate respondsToSelector:@selector(TFHomeCategoryViewSelect:type:select:)]) {
+        [_delegate TFHomeCategoryViewSelect:_aryInfo[indexPath.row] type:_type select:indexPath.row];
     }
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath

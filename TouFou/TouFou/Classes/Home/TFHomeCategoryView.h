@@ -16,18 +16,19 @@ typedef NS_ENUM(NSInteger, TFHomeCategoryType) {
 
 @protocol TFHomeCategoryViewDelegate <NSObject>
 
-- (void)TFHomeCategoryViewSelect:(id)info type:(TFHomeCategoryType)type;
+- (void)TFHomeCategoryViewSelect:(id)info type:(TFHomeCategoryType)type select:(NSInteger)select;
 
 @end
 
 @interface TFHomeCategoryView : UIView
 <UITableViewDelegate, UITableViewDataSource>
 
+@property (nonatomic, assign) NSInteger                          select;
 @property (nonatomic, strong) UITableView                       *tableView;
 @property (nonatomic, strong) NSArray                           *aryInfo;
 @property (nonatomic, weak)   id <TFHomeCategoryViewDelegate>    delegate;
 @property (nonatomic)         TFHomeCategoryType                 type;
 
-- (void)setInfo:(NSArray *)ary type:(TFHomeCategoryType)type;
+- (void)setInfo:(NSArray *)ary type:(TFHomeCategoryType)type select:(NSInteger)select;
 
 @end

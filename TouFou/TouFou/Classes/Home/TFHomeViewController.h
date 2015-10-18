@@ -9,12 +9,25 @@
 #import <UIKit/UIKit.h>
 #import "TFHomeCategoryView.h"
 
+typedef NS_ENUM(NSInteger, TFHomeCategoryState) {
+    TFHomeCategoryStateNone,        //关闭
+    TFHomeCategoryStateSource,      //来源
+    TFHomeCategoryStateCategory,    //分类
+    TFHomeCategoryStatePeriod       //阶段
+};
+
 @interface TFHomeViewController : UIBaseViewController
 <TFHomeCategoryViewDelegate>
+
+@property (nonatomic, assign) TFHomeCategoryState            stateCategory;
 
 @property (nonatomic, strong) NSMutableArray                *arySource;
 @property (nonatomic, strong) NSMutableArray                *aryCategory;
 @property (nonatomic, strong) NSMutableArray                *aryPeriod;
+
+@property (nonatomic, assign) NSInteger                      indexSource;
+@property (nonatomic, assign) NSInteger                      indexCategory;
+@property (nonatomic, assign) NSInteger                      indexPeriod;
 
 @property (nonatomic, weak)   IBOutlet UIButton             *btnSource;
 @property (nonatomic, weak)   IBOutlet UIButton             *btnCategory;
