@@ -83,7 +83,7 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     <state key="normal" title="撰写分析文章" image="TFProjectWrite">
-                                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleColor" red="0.82745098039215681" green="0.32941176470588235" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
                                     <connections>
                                         <action selector="actionWrite:" destination="-1" eventType="touchUpInside" id="oeo-XH-sMP"/>
@@ -102,7 +102,7 @@
                         <view contentMode="scaleToFill" id="pCx-oh-28N">
                             <rect key="frame" x="0.0" y="230" width="320" height="50"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                         </view>
                     </subviews>
                     <connections>
@@ -134,7 +134,9 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j0q-ev-zxo">
                             <rect key="frame" x="270" y="0.0" width="50" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="发送"/>
+                            <state key="normal" title="发送">
+                                <color key="titleColor" red="0.46274509800000002" green="0.65098039220000004" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
                             <connections>
                                 <action selector="actionSend:" destination="-1" eventType="touchUpInside" id="ezA-A7-8G6"/>
                             </connections>
@@ -144,7 +146,7 @@
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <point key="canvasLocation" x="103" y="263"/>
+            <point key="canvasLocation" x="-117" y="226"/>
         </view>
     </objects>
     <resources>

@@ -19,10 +19,10 @@
 {
     self = [super initWithRootViewController:rootViewController];
     
-    self.navigationBar.tintColor = TFColor_Main;
-    self.navigationBar.barTintColor = [UIColor whiteColor];
+    self.navigationBar.tintColor = TFColor_Nav_Title;
+    self.navigationBar.barTintColor = TFColor_Nav_Background;
     self.navigationBar.translucent = NO;
-    [self.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:TFColor_Main,NSForegroundColorAttributeName,nil]];
+    [self.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:TFColor_Nav_Title,NSForegroundColorAttributeName,nil]];
     
     return self;
 }

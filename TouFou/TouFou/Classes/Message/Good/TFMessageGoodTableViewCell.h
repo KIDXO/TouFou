@@ -10,4 +10,7 @@
 
 @interface TFMessageGoodTableViewCell : UITableViewCell
 
+@property (nonatomic, weak) IBOutlet UILabel        *labTitle;
+@property (nonatomic, weak) IBOutlet UILabel        *labTime;
+
 @end

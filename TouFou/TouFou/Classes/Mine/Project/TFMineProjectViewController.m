@@ -7,6 +7,7 @@
 //
 
 #import "TFMineProjectViewController.h"
+#import "TFInfoArticleViewController.h"
 #import "TFHomeTableViewCell.h"
 
 static NSString *strIdentifier = @"TFHomeTableViewCell";
@@ -53,7 +54,13 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
 #pragma mark TableView
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 300;
+    if (_style == TFMineProjectStyleRelease ||
+        _style == TFMineProjectStyleComment) {
+        return 250;
+    }
+    else {
+        return 300;
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
@@ -94,7 +101,17 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [TFNotificationCenter postNotificationName:TFNotificationInfo object:nil];
+    if (_style == TFMineProjectStyleRelease) {
+        TFInfoArticleViewController *vc = [[TFInfoArticleViewController alloc] initWithNibName:@"TFInfoArticleViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else if (_style == TFMineProjectStyleComment) {
+        TFInfoArticleViewController *vc = [[TFInfoArticleViewController alloc] initWithNibName:@"TFInfoArticleViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else {
+        [TFNotificationCenter postNotificationName:TFNotificationInfo object:nil];
+    }
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

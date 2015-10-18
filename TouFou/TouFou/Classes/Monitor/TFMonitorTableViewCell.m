@@ -29,10 +29,10 @@
         case TFMonitorStyleMoney:
         {
             _labTitle.text = @"起投额监控";
-            _labAbout.text = @"将起投额小于10万的项目推送给我";
+            _labAbout.text = @"将起投额小于 10万 的项目推送给我";
             NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:_labAbout.text];
-            [str addAttribute:NSForegroundColorAttributeName value:[UIColor redColor]
-                        range:NSMakeRange(6, _labAbout.text.length - 14)];
+            [str addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithHex:0x7B101D]
+                        range:NSMakeRange(7, _labAbout.text.length - 15)];
             _labAbout.attributedText = str;
             _sliderView.minimumValue = 1;
             _sliderView.maximumValue = 5;
@@ -42,10 +42,10 @@
         case TFMonitorStyleComplete:
         {
             _labTitle.text = @"完成率监控";
-            _labAbout.text = @"将完成率小于10%的项目推送给我";
+            _labAbout.text = @"将完成率小于 10% 的项目推送给我";
             NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:_labAbout.text];
-            [str addAttribute:NSForegroundColorAttributeName value:[UIColor redColor]
-                        range:NSMakeRange(6, _labAbout.text.length - 14)];
+            [str addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithHex:0x7B101D]
+                        range:NSMakeRange(7, _labAbout.text.length - 15)];
             _labAbout.attributedText = str;
             _sliderView.minimumValue = 1;
             _sliderView.maximumValue = 10;
@@ -91,19 +91,19 @@
                 default:
                     break;
             }
-            _labAbout.text = [NSString stringWithFormat:@"将起投额小于%@万的项目推送给我",strMoney];
+            _labAbout.text = [NSString stringWithFormat:@"将起投额小于 %@万 的项目推送给我",strMoney];
             NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:_labAbout.text];
-            [str addAttribute:NSForegroundColorAttributeName value:[UIColor redColor]
-                        range:NSMakeRange(6, _labAbout.text.length - 14)];
+            [str addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithHex:0x7B101D]
+                        range:NSMakeRange(7, _labAbout.text.length - 15)];
             _labAbout.attributedText = str;
         }
             break;
         case TFMonitorStyleComplete:
         {
-            _labAbout.text = [NSString stringWithFormat:@"将完成率小于%.f%%的项目推送给我",sender.value * 10];
+            _labAbout.text = [NSString stringWithFormat:@"将完成率小于 %.f%% 的项目推送给我",sender.value * 10];
             NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:_labAbout.text];
-            [str addAttribute:NSForegroundColorAttributeName value:[UIColor redColor]
-                        range:NSMakeRange(6, _labAbout.text.length - 14)];
+            [str addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithHex:0x7B101D]
+                        range:NSMakeRange(7, _labAbout.text.length - 15)];
             _labAbout.attributedText = str;
         }
             break;

@@ -8,6 +8,7 @@
 
 #import "TFMineDraftViewController.h"
 #import "TFMineDraftTableViewCell.h"
+#import "TFInfoWriteViewController.h"
 
 static NSString *strIdentifier = @"TFMineDraftTableViewCell";
 
@@ -143,6 +144,8 @@ static NSString *strIdentifier = @"TFMineDraftTableViewCell";
         [self.aryListSelect addObject:indexPath];
     }
     else {
+        TFInfoWriteViewController *vc = [[TFInfoWriteViewController alloc] initWithNibName:@"TFInfoWriteViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
     }
 }

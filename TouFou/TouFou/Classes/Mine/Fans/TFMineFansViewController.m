@@ -75,7 +75,7 @@ static NSString *strIdentifier = @"TFMineFansTableViewCell";
     if (!labConut) {
         labConut = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, tableView.width, 44)];
         labConut.text = @"20 人";
-        labConut.textColor = TFColor_Main;
+        labConut.textColor = TFColor_Text_Dark;
         labConut.textAlignment = NSTextAlignmentCenter;
         labConut.font = [UIFont systemFontOfSize:15];
         labConut.backgroundColor = [UIColor clearColor];

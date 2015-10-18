@@ -14,6 +14,11 @@
 {
     _imgHead.layer.cornerRadius = TFCorner;
     _imgHead.layer.masksToBounds = true;
+    
+    _btnReply.layer.cornerRadius = TFCorner;
+    _btnReply.layer.masksToBounds = true;
+    _btnReply.layer.borderWidth = 0.5;
+    _btnReply.layer.borderColor = TFColor_Text_Dark.CGColor;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
@@ -34,13 +39,13 @@
     
     NSMutableAttributedString *strResponse = [[NSMutableAttributedString alloc] initWithString:info.responseFormat];
     if (strResponse.length > 3) {
-        [strResponse addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithHex:0x1CAEDE]
+        [strResponse addAttribute:NSForegroundColorAttributeName value:[UIColor blackColor]
                             range:NSMakeRange(0, 3)];
     }
     
     NSMutableAttributedString *strComment = [[NSMutableAttributedString alloc] initWithString:info.commentFormat];
     if (strComment.length > info.nameComment.length + 1) {
-        [strComment addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithHex:0x1CAEDE]
+        [strComment addAttribute:NSForegroundColorAttributeName value:TFColor_Text_Reply
                            range:NSMakeRange(0, info.nameComment.length + 1)];
     }
     _labResponse.attributedText = strResponse;

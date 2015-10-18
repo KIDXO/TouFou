@@ -16,6 +16,7 @@
 @property (nonatomic, weak) IBOutlet UILabel        *labTime;
 @property (nonatomic, weak) IBOutlet UILabel        *labResponse;
 @property (nonatomic, weak) IBOutlet UILabel        *labComment;
+@property (nonatomic, weak) IBOutlet UIButton       *btnReply;
 @property (nonatomic, weak) IBOutlet UIView         *viewLine;
 
 - (void)setInfo:(TFMessageCommentInfo *)info;

@@ -1825,6 +1825,7 @@
 				TargetAttributes = {
 					072342CD1BB8DB9000837FF7 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = CQEKR622YT;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -2219,6 +2220,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TouFou/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -2232,6 +2234,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TouFou/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

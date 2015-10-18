@@ -14,5 +14,7 @@
 @property (nonatomic, strong)   TFInfoArticleContentInfo    *info;
 @property (nonatomic, weak)     IBOutlet UITableView        *tableView;
 @property (nonatomic, strong)            UIImageView        *imgHead;
+@property (nonatomic, strong)            UIButton           *btnFavorite;
+@property (nonatomic, weak)     IBOutlet UIButton           *btnTop;
 
 @end

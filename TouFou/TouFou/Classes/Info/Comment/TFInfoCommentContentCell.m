@@ -65,15 +65,15 @@
             NSMutableAttributedString *strResponse = [[NSMutableAttributedString alloc] initWithString:response.responseFormat];
             if (response.nameResponse.length > 0) {
                 if (strResponse.length > response.name.length + response.nameResponse.length + 3) {
-                    [strResponse addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithHex:0x1CAEDE]
+                    [strResponse addAttribute:NSForegroundColorAttributeName value:TFColor_Text_Reply
                                         range:NSMakeRange(0, response.name.length)];
-                    [strResponse addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithHex:0x1CAEDE]
+                    [strResponse addAttribute:NSForegroundColorAttributeName value:TFColor_Text_Reply
                                         range:NSMakeRange(response.name.length + 2, response.nameResponse.length + 1)];
                 }
             }
             else {
                 if (strResponse.length > response.name.length + 1) {
-                    [strResponse addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithHex:0x1CAEDE]
+                    [strResponse addAttribute:NSForegroundColorAttributeName value:TFColor_Text_Reply
                                         range:NSMakeRange(0, response.name.length + 1)];
                 }
             }

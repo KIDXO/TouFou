@@ -67,7 +67,7 @@
         _controlSegment.titleColor = TFColor_Text_Light;
         _controlSegment.countColor = TFColor_Text_Light;
         _controlSegment.selectionIndicatorColor = TFColor_Button;
-        _controlSegment.tintColor = TFColor_Main;
+        _controlSegment.tintColor = TFColor_Text_Dark;
         _controlSegment.backgroundColor = [UIColor clearColor];
         _controlSegment.hairlineColor = [UIColor clearColor];
         _controlSegment.adjustsFontSizeToFitWidth = YES;

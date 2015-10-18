@@ -219,8 +219,8 @@
         _controlSegment.showsCount = NO;
         _controlSegment.bouncySelectionIndicator = NO;
         _controlSegment.autoAdjustSelectionIndicatorWidth = NO;
-        _controlSegment.titleColor = TFColor_Main;
-        _controlSegment.countColor = TFColor_Main;
+        _controlSegment.titleColor = TFColor_Text_Dark;
+        _controlSegment.countColor = TFColor_Text_Dark;
         _controlSegment.selectionIndicatorColor = TFColor_Button;
         _controlSegment.tintColor = TFColor_Button;
         _controlSegment.backgroundColor = [UIColor clearColor];

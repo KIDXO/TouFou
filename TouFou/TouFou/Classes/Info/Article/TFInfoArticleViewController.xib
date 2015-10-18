@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TFInfoArticleViewController">
             <connections>
+                <outlet property="btnTop" destination="ufj-rb-oQJ" id="NmA-i4-SXc"/>
                 <outlet property="tableView" destination="kPA-Ym-jDZ" id="8jq-zN-Elq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -25,15 +26,13 @@
                         <outlet property="delegate" destination="-1" id="FIg-sl-fBn"/>
                     </connections>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qwT-g5-1vd">
-                    <rect key="frame" x="270" y="350" width="50" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <state key="normal" image="TFArticleLove"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ufj-rb-oQJ">
-                    <rect key="frame" x="270" y="400" width="50" height="50"/>
+                <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ufj-rb-oQJ">
+                    <rect key="frame" x="260" y="470" width="60" height="60"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <state key="normal" image="TFArticleTop"/>
+                    <connections>
+                        <action selector="actionTop:" destination="-1" eventType="touchUpInside" id="Pyj-oe-8u2"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -41,7 +40,6 @@
         </view>
     </objects>
     <resources>
-        <image name="TFArticleLove" width="29" height="29"/>
         <image name="TFArticleTop" width="29" height="29"/>
     </resources>
 </document>

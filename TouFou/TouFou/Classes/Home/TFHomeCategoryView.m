@@ -98,7 +98,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:strIdentifier];
         cell.textLabel.textAlignment = NSTextAlignmentCenter;
-        cell.textLabel.textColor = TFColor_Main;
+        cell.textLabel.textColor = TFColor_Text_Dark;
     }
     cell.textLabel.text = _aryInfo[indexPath.row];
     return cell;

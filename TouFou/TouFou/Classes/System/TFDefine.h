@@ -28,12 +28,13 @@
 #define TFAnimate                       0.3f
 #define TFCorner                        5
 
-#define TFColor_Main                    [UIColor colorWithHex:0x555555]
+#define TFColor_Nav_Title               [UIColor colorWithHex:0x555555]
+#define TFColor_Nav_Background          [UIColor colorWithHex:0xFAFAFA]
 #define TFColor_Line                    [UIColor colorWithHex:0xEAEAEA]
-#define TFColor_Text_Dark               [UIColor colorWithHex:0x808080]
-#define TFColor_Text_Light              [UIColor colorWithHex:0xA9A9A9]
+#define TFColor_Text_Dark               [UIColor colorWithHex:0x555555]
+#define TFColor_Text_Light              [UIColor colorWithHex:0xBABABA]
+#define TFColor_Text_Reply              [UIColor colorWithHex:0x11509A]
 #define TFColor_Button                  [UIColor colorWithHex:0x76A6FD]
 #define TFColor_Separator               [UIColor colorWithWhite:1 alpha:0.2]
-#define TFColor_PlaceHolder             [UIColor colorWithRed:0 green:0 blue:0.0980392 alpha:0.22]
 
 #endif /* TFDefine_h */
