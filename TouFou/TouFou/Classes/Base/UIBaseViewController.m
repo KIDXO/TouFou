@@ -19,7 +19,7 @@
 - (id)init
 {
     self = [super init];
-    return self;
+    return self;	
 }
 
 - (void)viewDidLoad
@@ -38,9 +38,11 @@
     else {
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
     }
+    /*
     if (_navigationBarHidden_New != _navigationBarHidden_Old) {
-        [self.navigationController setNavigationBarHidden:_navigationBarHidden_New animated:YES];
+       [self.navigationController setNavigationBarHidden:_navigationBarHidden_New animated:YES];
     }
+    */
 }
 
 - (void)viewDidAppear:(BOOL)animated

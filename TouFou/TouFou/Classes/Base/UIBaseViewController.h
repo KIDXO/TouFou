@@ -18,11 +18,11 @@
 /**
  *  设置上个视图控制器的导航栏状态,默认NO显示
  */
-@property (nonatomic, assign) BOOL navigationBarHidden_Old;
+//@property (nonatomic, assign) BOOL navigationBarHidden_Old;
 /**
  *  设置当前视图控制器的导航栏状态,默认NO显示
  */
-@property (nonatomic, assign) BOOL navigationBarHidden_New;
+//@property (nonatomic, assign) BOOL navigationBarHidden_New;
 
 /**
  *  创建右侧按钮

@@ -27,6 +27,7 @@
     return self;
 }
 
+/*
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     //从vc进入到viewController
@@ -35,17 +36,17 @@
     [super pushViewController:viewController animated:animated];
     
     if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
-        self.interactivePopGestureRecognizer.delegate = nil;
+         self.interactivePopGestureRecognizer.delegate = nil;
     }
     
     BOOL navigationBarHidden_New = NO;
     
-    if ([vc isKindOfClass:[UIBaseViewController class]]) {
+    if ([vc isKindOfClass:UIBaseViewController.class]) {
         UIBaseViewController *base = (UIBaseViewController*)vc;
         navigationBarHidden_New = base.navigationBarHidden_New;
     }
     
-    if ([viewController isKindOfClass:[UIBaseViewController class]]) {
+    if ([viewController isKindOfClass:UIBaseViewController.class]) {
         UIBaseViewController *base = (UIBaseViewController*)viewController;
         base.navigationBarHidden_Old = navigationBarHidden_New;
     }
@@ -59,17 +60,18 @@
     
     BOOL navigationBarHidden_New = NO;
     
-    if ([vcB isKindOfClass:[UIBaseViewController class]]) {
+    if ([vcB isKindOfClass:UIBaseViewController.class]) {
         UIBaseViewController* base = (UIBaseViewController*)vcB;
         navigationBarHidden_New = base.navigationBarHidden_New;
     }
     
-    if ([vcA isKindOfClass:[UIBaseViewController class]]) {
+    if ([vcA isKindOfClass:UIBaseViewController.class]) {
         UIBaseViewController *base = (UIBaseViewController*)vcA;
         base.navigationBarHidden_Old = navigationBarHidden_New;
     }
     
     return vcB;
 }
+*/
 
 @end

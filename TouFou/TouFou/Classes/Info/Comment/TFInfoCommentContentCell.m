@@ -50,7 +50,7 @@
     _viewResponse.width = TFWidth - 70;
     
     for (UIView *view in _viewResponse.subviews) {
-        if ([view isKindOfClass:[UIButton class]]) {
+        if ([view isKindOfClass:UIButton.class]) {
             [view removeFromSuperview];
         }
     }

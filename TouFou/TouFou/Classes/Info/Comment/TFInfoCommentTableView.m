@@ -60,7 +60,7 @@ static NSString *strIdentifier = @"TFInfoCommentContentCell";
                                   UIViewAutoresizingFlexibleBottomMargin;
     _tableView.delaysContentTouches = NO;
     for (UIView *view in _tableView.subviews) {
-        if ([view isKindOfClass:[UIScrollView class]]) {
+        if ([view isKindOfClass:UIScrollView.class]) {
            ((UIScrollView *)view).delaysContentTouches = NO;
         }
     }
