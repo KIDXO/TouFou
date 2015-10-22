@@ -17,6 +17,9 @@
 #define TFLog(...)
 #endif
 
+#define iTunes_APP                      @"757844897"
+#define iTunes_URL                      [NSString stringWithFormat:@"https://itunes.apple.com/cn/app/id%@",iTunes_APP]
+
 #define TFNotificationCenter            [NSNotificationCenter defaultCenter]
 #define TFNotificationInfo              @"TFNotificationInfo"
 

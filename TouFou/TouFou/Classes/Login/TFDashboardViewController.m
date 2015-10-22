@@ -7,6 +7,7 @@
 //
 
 #import "TFDashboardViewController.h"
+#import "TFVerifyViewController.h"
 #import "TFLoginViewController.h"
 
 @interface TFDashboardViewController ()
@@ -57,7 +58,9 @@
 #pragma mark Action
 - (IBAction)actionRegist:(id)sender
 {
-    
+    TFVerifyViewController *vc = [[TFVerifyViewController alloc] initWithNibName:@"TFVerifyViewController" bundle:nil];
+    vc.type = TFVerifyTypeRegist;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (IBAction)actionLogin:(id)sender

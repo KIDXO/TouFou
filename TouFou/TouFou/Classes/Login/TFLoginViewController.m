@@ -7,7 +7,7 @@
 //
 
 #import "TFLoginViewController.h"
-#import "TFForgetViewController.h"
+#import "TFVerifyViewController.h"
 
 @interface TFLoginViewController ()
 
@@ -52,6 +52,7 @@
 {
     [super viewWillDisappear:animated];
     
+    [self resignFirstResponder:nil];
     [self an_unsubscribeKeyboard];
 }
 
@@ -84,9 +85,14 @@
     [_textPassword becomeFirstResponder];
 }
 
+- (IBAction)actionDone:(id)sender
+{
+    [_textPassword resignFirstResponder];
+}
+
 - (IBAction)actionConfirm:(id)sender
 {
-    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)actionCancel:(id)sender
@@ -96,7 +102,8 @@
 
 - (IBAction)actionForget:(id)sender
 {
-    TFForgetViewController *vc = [[TFForgetViewController alloc] initWithNibName:@"TFForgetViewController" bundle:nil];
+    TFVerifyViewController *vc = [[TFVerifyViewController alloc] initWithNibName:@"TFVerifyViewController" bundle:nil];
+    vc.type = TFVerifyTypeForget;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

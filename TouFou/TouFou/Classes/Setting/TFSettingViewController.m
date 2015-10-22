@@ -7,8 +7,11 @@
 //
 
 #import "TFSettingViewController.h"
+#import "TFPasswordViewController.h"
+#import <StoreKit/StoreKit.h>
 
 @interface TFSettingViewController ()
+<SKStoreProductViewControllerDelegate>
 
 @end
 
@@ -37,6 +40,32 @@
     }
 }
 
+- (void)actionStoreScore
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:iTunes_URL]];
+
+    /*
+    SKStoreProductViewController *vc = [[SKStoreProductViewController alloc] init];
+    vc.delegate = self;
+    [vc loadProductWithParameters:@{SKStoreProductParameterITunesItemIdentifier:iTunes_APP}
+                  completionBlock:^(BOOL result, NSError *error) {
+         if (result) {
+             if (error) {
+                 NSLog(@"error %@ with userInfo %@",error,[error userInfo]);
+             }
+             else {
+                 [self presentViewController:vc animated:YES completion:^{ }];
+             }
+         }
+     }];
+     */
+}
+
+- (void)productViewControllerDidFinish:(SKStoreProductViewController *)viewController
+{
+    [self dismissViewControllerAnimated:YES completion:^{ }];
+}
+
 #pragma mark -
 #pragma mark TableView
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -46,7 +75,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    if (section == 4) {
+    if (section == 5) {
         return 100;
     }
     return 20;
@@ -69,7 +98,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 5;
+    return 6;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -82,12 +111,15 @@
             return 1;
             break;
         case 2:
-            return 2;
-            break;
-        case 3:
             return 1;
             break;
+        case 3:
+            return 2;
+            break;
         case 4:
+            return 1;
+            break;
+        case 5:
             return 1;
             break;
         default:
@@ -114,49 +146,59 @@
         }
     }
     else if (indexPath.section == 1) {
+        static NSString *strIdentifier2 = @"UITableViewCell2";
         if (indexPath.row == 0) {
-            static NSString *strIdentifier2 = @"UITableViewCell2";
             cell = [tableView dequeueReusableCellWithIdentifier:strIdentifier2];
             if (cell == nil) {
                 cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:strIdentifier2];
+                cell.textLabel.text = @"修改密码";
+            }
+        }
+    }
+    else if (indexPath.section == 2) {
+        if (indexPath.row == 0) {
+            static NSString *strIdentifier3 = @"UITableViewCell3";
+            cell = [tableView dequeueReusableCellWithIdentifier:strIdentifier3];
+            if (cell == nil) {
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:strIdentifier3];
                 cell.textLabel.text = @"清除缓存";
                 cell.detailTextLabel.text = @"81.5MB";
             }
         }
     }
-    else if (indexPath.section == 2) {
-        static NSString *strIdentifier3 = @"UITableViewCell3";
-        if (indexPath.row == 0) {
-            cell = [tableView dequeueReusableCellWithIdentifier:strIdentifier3];
-            if (cell == nil) {
-                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:strIdentifier3];
-                cell.textLabel.text = @"意见反馈";
-            }
-        }
-        else if (indexPath.row == 1) {
-            cell = [tableView dequeueReusableCellWithIdentifier:strIdentifier3];
-            if (cell == nil) {
-                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:strIdentifier3];
-                cell.textLabel.text = @"App Store 评分";
-            }
-        }
-    }
     else if (indexPath.section == 3) {
-        static NSString *strIdentifier3 = @"UITableViewCell3";
-        if (indexPath.row == 0) {
-            cell = [tableView dequeueReusableCellWithIdentifier:strIdentifier3];
-            if (cell == nil) {
-                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:strIdentifier3];
-                cell.textLabel.text = @"关于我们";
-            }
-        }
-    }
-    else if (indexPath.section == 4) {
         static NSString *strIdentifier4 = @"UITableViewCell4";
         if (indexPath.row == 0) {
             cell = [tableView dequeueReusableCellWithIdentifier:strIdentifier4];
             if (cell == nil) {
-                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:strIdentifier4];
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:strIdentifier4];
+                cell.textLabel.text = @"意见反馈";
+            }
+        }
+        else if (indexPath.row == 1) {
+            cell = [tableView dequeueReusableCellWithIdentifier:strIdentifier4];
+            if (cell == nil) {
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:strIdentifier4];
+                cell.textLabel.text = @"给我评分";
+            }
+        }
+    }
+    else if (indexPath.section == 4) {
+        static NSString *strIdentifier5 = @"UITableViewCell5";
+        if (indexPath.row == 0) {
+            cell = [tableView dequeueReusableCellWithIdentifier:strIdentifier5];
+            if (cell == nil) {
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:strIdentifier5];
+                cell.textLabel.text = @"关于我们";
+            }
+        }
+    }
+    else if (indexPath.section == 5) {
+        static NSString *strIdentifier6 = @"UITableViewCell6";
+        if (indexPath.row == 0) {
+            cell = [tableView dequeueReusableCellWithIdentifier:strIdentifier6];
+            if (cell == nil) {
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:strIdentifier6];
                 cell.textLabel.text = @"退  出  登  录";
                 cell.textLabel.textAlignment = NSTextAlignmentCenter;
                 cell.textLabel.textColor = TFColor_Button;
@@ -177,6 +219,22 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    switch (indexPath.section) {
+        case 1: {
+            TFPasswordViewController *vc = [[TFPasswordViewController alloc] initWithNibName:@"TFPasswordViewController" bundle:nil];
+            vc.type = TFPasswordTypeEdit;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 3: {
+            if (indexPath.row == 1) {
+                [self actionStoreScore];
+            }
+        }
+            break;
+        default:
+            break;
+    }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

@@ -1,25 +1,33 @@
 //
-//  TFForgetViewController.m
+//  TFVerifyViewController.m
 //  TouFou
 //
-//  Created by KID on 15/10/20.
+//  Created by KID on 15/10/22.
 //  Copyright © 2015年 KID. All rights reserved.
 //
 
-#import "TFForgetViewController.h"
+#import "TFVerifyViewController.h"
+#import "TFRegistViewController.h"
+#import "TFPasswordViewController.h"
 
-@interface TFForgetViewController ()
+@interface TFVerifyViewController ()
 
 @end
 
-@implementation TFForgetViewController
+@implementation TFVerifyViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    [self setTitle:@"忘记密码"];
-    [self setTitleCustom:@"忘记密码"];
+    if (_type == TFVerifyTypeRegist) {
+        [self setTitle:@"手机验证"];
+        [self setTitleCustom:@"手机验证"];
+    }
+    else if (_type == TFVerifyTypeForget) {
+        [self setTitle:@"忘记密码"];
+        [self setTitleCustom:@"忘记密码"];
+    }
     
     [self createReturnButton];
     
@@ -50,6 +58,7 @@
 {
     [super viewWillDisappear:animated];
     
+    [self resignFirstResponder:nil];
     [self an_unsubscribeKeyboard];
 }
 
@@ -74,6 +83,37 @@
 - (IBAction)resignFirstResponder:(id)sender
 {
     [_textPhone resignFirstResponder];
+}
+
+- (IBAction)actionDone:(id)sender
+{
+    [_textPhone resignFirstResponder];
+}
+
+- (IBAction)actionVoice:(id)sender
+{
+    if (_type == TFVerifyTypeRegist) {
+        TFRegistViewController *vc = [[TFRegistViewController alloc] initWithNibName:@"TFRegistViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else if (_type == TFVerifyTypeForget) {
+        TFPasswordViewController *vc = [[TFPasswordViewController alloc] initWithNibName:@"TFPasswordViewController" bundle:nil];
+        vc.type = TFPasswordTypeForget;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+}
+
+- (IBAction)actionConfirm:(id)sender
+{
+    if (_type == TFVerifyTypeRegist) {
+        TFRegistViewController *vc = [[TFRegistViewController alloc] initWithNibName:@"TFRegistViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else if (_type == TFVerifyTypeForget) {
+        TFPasswordViewController *vc = [[TFPasswordViewController alloc] initWithNibName:@"TFPasswordViewController" bundle:nil];
+        vc.type = TFPasswordTypeForget;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 - (IBAction)actionCancel:(id)sender

@@ -31,9 +31,9 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
     [self initData];
     [self initView];
     
-    TFDashboardViewController *vc = [[TFDashboardViewController alloc] initWithNibName:@"TFDashboardViewController" bundle:nil];
-    UIBaseNavigationController *nav = [[UIBaseNavigationController alloc] initWithRootViewController:vc];
-    [self presentViewController:nav animated:YES completion:nil];
+//    TFDashboardViewController *vc = [[TFDashboardViewController alloc] initWithNibName:@"TFDashboardViewController" bundle:nil];
+//    UIBaseNavigationController *nav = [[UIBaseNavigationController alloc] initWithRootViewController:vc];
+//    [self presentViewController:nav animated:YES completion:nil];
 }
 
 - (void)viewDidDisappear:(BOOL)animated

@@ -31,8 +31,6 @@
 		074C38B41BC79D6A00040373 /* TFMineDraftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074C38B21BC79D6A00040373 /* TFMineDraftViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		074C38B81BC79E4400040373 /* TFMineDraftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 074C38B61BC79E4400040373 /* TFMineDraftTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		074C38B91BC79E4400040373 /* TFMineDraftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074C38B71BC79E4400040373 /* TFMineDraftTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		07596BD41BD5F4740058F38B /* TFForgetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07596BD21BD5F4740058F38B /* TFForgetViewController.m */; settings = {ASSET_TAGS = (); }; };
-		07596BD51BD5F4740058F38B /* TFForgetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07596BD31BD5F4740058F38B /* TFForgetViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		076FBE391BD75CB500C794CE /* TFDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 076FBE371BD75CB500C794CE /* TFDashboardViewController.m */; settings = {ASSET_TAGS = (); }; };
 		076FBE3A1BD75CB500C794CE /* TFDashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 076FBE381BD75CB500C794CE /* TFDashboardViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		0782F9A71BCCD0D2007A9943 /* TFInfoCommentContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0782F9A51BCCD0D2007A9943 /* TFInfoCommentContentCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -50,6 +48,12 @@
 		078674571BCE264F001ED10A /* TFInfoArticleHeadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 078674551BCE264F001ED10A /* TFInfoArticleHeadCell.xib */; settings = {ASSET_TAGS = (); }; };
 		0786745B1BCE2708001ED10A /* TFInfoArticleAuthorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 078674591BCE2708001ED10A /* TFInfoArticleAuthorCell.m */; settings = {ASSET_TAGS = (); }; };
 		0786745C1BCE2708001ED10A /* TFInfoArticleAuthorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0786745A1BCE2708001ED10A /* TFInfoArticleAuthorCell.xib */; settings = {ASSET_TAGS = (); }; };
+		07A1E6471BD88699009ADE02 /* TFPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A1E6451BD88699009ADE02 /* TFPasswordViewController.m */; settings = {ASSET_TAGS = (); }; };
+		07A1E6481BD88699009ADE02 /* TFPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A1E6461BD88699009ADE02 /* TFPasswordViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		07A1E64C1BD88DB9009ADE02 /* TFRegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A1E64A1BD88DB9009ADE02 /* TFRegistViewController.m */; settings = {ASSET_TAGS = (); }; };
+		07A1E64D1BD88DB9009ADE02 /* TFRegistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A1E64B1BD88DB9009ADE02 /* TFRegistViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		07A1E6511BD89F17009ADE02 /* TFVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A1E64F1BD89F17009ADE02 /* TFVerifyViewController.m */; settings = {ASSET_TAGS = (); }; };
+		07A1E6521BD89F17009ADE02 /* TFVerifyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A1E6501BD89F17009ADE02 /* TFVerifyViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		07B946781BCBAB95003D2B4E /* TFInfoIntroDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B9466B1BCBAB95003D2B4E /* TFInfoIntroDetailCell.m */; settings = {ASSET_TAGS = (); }; };
 		07B946791BCBAB95003D2B4E /* TFInfoIntroDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07B9466C1BCBAB95003D2B4E /* TFInfoIntroDetailCell.xib */; settings = {ASSET_TAGS = (); }; };
 		07B9467A1BCBAB95003D2B4E /* TFInfoIntroParamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B9466E1BCBAB95003D2B4E /* TFInfoIntroParamCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -295,9 +299,6 @@
 		074C38B51BC79E4400040373 /* TFMineDraftTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFMineDraftTableViewCell.h; sourceTree = "<group>"; };
 		074C38B61BC79E4400040373 /* TFMineDraftTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFMineDraftTableViewCell.m; sourceTree = "<group>"; };
 		074C38B71BC79E4400040373 /* TFMineDraftTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFMineDraftTableViewCell.xib; sourceTree = "<group>"; };
-		07596BD11BD5F4740058F38B /* TFForgetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFForgetViewController.h; sourceTree = "<group>"; };
-		07596BD21BD5F4740058F38B /* TFForgetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFForgetViewController.m; sourceTree = "<group>"; };
-		07596BD31BD5F4740058F38B /* TFForgetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFForgetViewController.xib; sourceTree = "<group>"; };
 		076FBE361BD75CB500C794CE /* TFDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFDashboardViewController.h; sourceTree = "<group>"; };
 		076FBE371BD75CB500C794CE /* TFDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFDashboardViewController.m; sourceTree = "<group>"; };
 		076FBE381BD75CB500C794CE /* TFDashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFDashboardViewController.xib; sourceTree = "<group>"; };
@@ -325,6 +326,15 @@
 		078674581BCE2708001ED10A /* TFInfoArticleAuthorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoArticleAuthorCell.h; sourceTree = "<group>"; };
 		078674591BCE2708001ED10A /* TFInfoArticleAuthorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoArticleAuthorCell.m; sourceTree = "<group>"; };
 		0786745A1BCE2708001ED10A /* TFInfoArticleAuthorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFInfoArticleAuthorCell.xib; sourceTree = "<group>"; };
+		07A1E6441BD88699009ADE02 /* TFPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPasswordViewController.h; sourceTree = "<group>"; };
+		07A1E6451BD88699009ADE02 /* TFPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFPasswordViewController.m; sourceTree = "<group>"; };
+		07A1E6461BD88699009ADE02 /* TFPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFPasswordViewController.xib; sourceTree = "<group>"; };
+		07A1E6491BD88DB9009ADE02 /* TFRegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRegistViewController.h; sourceTree = "<group>"; };
+		07A1E64A1BD88DB9009ADE02 /* TFRegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRegistViewController.m; sourceTree = "<group>"; };
+		07A1E64B1BD88DB9009ADE02 /* TFRegistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFRegistViewController.xib; sourceTree = "<group>"; };
+		07A1E64E1BD89F17009ADE02 /* TFVerifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFVerifyViewController.h; sourceTree = "<group>"; };
+		07A1E64F1BD89F17009ADE02 /* TFVerifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFVerifyViewController.m; sourceTree = "<group>"; };
+		07A1E6501BD89F17009ADE02 /* TFVerifyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFVerifyViewController.xib; sourceTree = "<group>"; };
 		07B9466A1BCBAB95003D2B4E /* TFInfoIntroDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFInfoIntroDetailCell.h; sourceTree = "<group>"; };
 		07B9466B1BCBAB95003D2B4E /* TFInfoIntroDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFInfoIntroDetailCell.m; sourceTree = "<group>"; };
 		07B9466C1BCBAB95003D2B4E /* TFInfoIntroDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFInfoIntroDetailCell.xib; sourceTree = "<group>"; };
@@ -874,9 +884,15 @@
 				0732FE911BD4E57700753045 /* TFLoginViewController.h */,
 				0732FE921BD4E57700753045 /* TFLoginViewController.m */,
 				0732FE931BD4E57700753045 /* TFLoginViewController.xib */,
-				07596BD11BD5F4740058F38B /* TFForgetViewController.h */,
-				07596BD21BD5F4740058F38B /* TFForgetViewController.m */,
-				07596BD31BD5F4740058F38B /* TFForgetViewController.xib */,
+				07A1E6491BD88DB9009ADE02 /* TFRegistViewController.h */,
+				07A1E64A1BD88DB9009ADE02 /* TFRegistViewController.m */,
+				07A1E64B1BD88DB9009ADE02 /* TFRegistViewController.xib */,
+				07A1E64E1BD89F17009ADE02 /* TFVerifyViewController.h */,
+				07A1E64F1BD89F17009ADE02 /* TFVerifyViewController.m */,
+				07A1E6501BD89F17009ADE02 /* TFVerifyViewController.xib */,
+				07A1E6441BD88699009ADE02 /* TFPasswordViewController.h */,
+				07A1E6451BD88699009ADE02 /* TFPasswordViewController.m */,
+				07A1E6461BD88699009ADE02 /* TFPasswordViewController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -1922,12 +1938,14 @@
 				074C38A81BC786AA00040373 /* TFMineFansTableViewCell.xib in Resources */,
 				072B53441BC606DA00EF8432 /* TFMonitorTableViewCell.xib in Resources */,
 				076FBE3A1BD75CB500C794CE /* TFDashboardViewController.xib in Resources */,
+				07A1E6481BD88699009ADE02 /* TFPasswordViewController.xib in Resources */,
 				07B946801BCBAB95003D2B4E /* TFInfoIntroValueCell.xib in Resources */,
 				0786744F1BCE1A66001ED10A /* TFInfoArticleContentCell.xib in Resources */,
 				07EEA0E41BC8E7EC00ABFD6E /* TFMessageUpdateViewController.xib in Resources */,
+				07A1E6521BD89F17009ADE02 /* TFVerifyViewController.xib in Resources */,
 				07C4DAED1BB9436700828031 /* TFSideTableViewCell.xib in Resources */,
+				07A1E64D1BD88DB9009ADE02 /* TFRegistViewController.xib in Resources */,
 				07C709181BBA8EDC005E1CD3 /* TFMineViewController.xib in Resources */,
-				07596BD51BD5F4740058F38B /* TFForgetViewController.xib in Resources */,
 				0732FE951BD4E57700753045 /* TFLoginViewController.xib in Resources */,
 				074C38B41BC79D6A00040373 /* TFMineDraftViewController.xib in Resources */,
 				078674401BCE15D1001ED10A /* TFInfoArticleViewController.xib in Resources */,
@@ -2038,6 +2056,7 @@
 				07C4DA421BB9043700828031 /* UILabel+AutoSize.m in Sources */,
 				07C4DA261BB9043700828031 /* NSURL+Param.m in Sources */,
 				0782F9B81BCD04CC007A9943 /* TFInfoWriteViewController.m in Sources */,
+				07A1E6471BD88699009ADE02 /* TFPasswordViewController.m in Sources */,
 				072D89771BCE48B200A4A9AC /* HPGrowingTextView.m in Sources */,
 				07B9468E1BCBB280003D2B4E /* CHCircleGaugeView.m in Sources */,
 				07DF311B1BBB737600276990 /* TFMineEditHeadTableViewCell.m in Sources */,
@@ -2080,6 +2099,7 @@
 				07C4DA661BB9043700828031 /* MJRefreshFooter.m in Sources */,
 				07C4DA361BB9043700828031 /* UIImage+Alpha.m in Sources */,
 				07C4DA101BB9043700828031 /* AFHTTPRequestOperationManager.m in Sources */,
+				07A1E6511BD89F17009ADE02 /* TFVerifyViewController.m in Sources */,
 				0782F9AB1BCCD3A8007A9943 /* TFInfoCommentInfo.m in Sources */,
 				07C4DA781BB9043700828031 /* SDImageCache.m in Sources */,
 				07C4DA6E1BB9043700828031 /* MJRefreshGifHeader.m in Sources */,
@@ -2101,6 +2121,7 @@
 				07DC4CC71BC97E2800211716 /* TFInfoViewController.m in Sources */,
 				07C4DA321BB9043700828031 /* UIColor+Random.m in Sources */,
 				07C4DA541BB9043700828031 /* UIView+Animation.m in Sources */,
+				07A1E64C1BD88DB9009ADE02 /* TFRegistViewController.m in Sources */,
 				072342D31BB8DB9000837FF7 /* main.m in Sources */,
 				07C4DA791BB9043700828031 /* SDWebImageCompat.m in Sources */,
 				07C4DA721BB9043700828031 /* MJRefreshConst.m in Sources */,
@@ -2122,7 +2143,6 @@
 				07C709211BBA9065005E1CD3 /* TFMineMenuTableViewCell.m in Sources */,
 				07C4DA4F1BB9043700828031 /* UITextField+History.m in Sources */,
 				078674521BCE225E001ED10A /* TFInfoArticleContentInfo.m in Sources */,
-				07596BD41BD5F4740058F38B /* TFForgetViewController.m in Sources */,
 				07C4DA401BB9043700828031 /* UIImageView+Letters.m in Sources */,
 				07EEA0DD1BC8E12900ABFD6E /* TFMessageGoodTableViewCell.m in Sources */,
 				07C4DA611BB9043700828031 /* JVFloatingDrawerView.m in Sources */,
