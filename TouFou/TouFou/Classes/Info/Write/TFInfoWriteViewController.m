@@ -18,8 +18,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     [self setTitle:@"撰写点评"];
     [self setTitleCustom:@"撰写点评"];
+    
     [self createReturnButton];
     [self createCustomButton:@"发布" target:self action:@selector(actionSubmit)];
     
@@ -57,10 +59,11 @@
 
 - (void)initView
 {
-    
     [_textContent setPlaceholder:@"撰写分析内容"];
 }
 
+#pragma mark -
+#pragma mark Action
 - (void)actionSubmit
 {
     
@@ -69,6 +72,16 @@
 - (IBAction)actionResign:(id)sender
 {
     [_textContent resignFirstResponder];
+}
+
+- (IBAction)actionAgree:(id)sender
+{
+    [_viewAgree setHidden:YES];
+}
+
+- (IBAction)actionDisagree:(id)sender
+{
+    [self actionReturn];
 }
 
 @end

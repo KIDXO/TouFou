@@ -20,6 +20,11 @@
     [self setTitle:@"平台协议"];
     [self setTitleCustom:@"平台协议"];
     [self createReturnButton];
+    
+    if (!_strURL) {
+         _strURL = TFAgreement;
+    }
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:_strURL]]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -27,14 +32,28 @@
     [super didReceiveMemoryWarning];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark -
+#pragma mark WebView
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    return YES;
 }
-*/
+
+- (void)webViewDidStartLoad:(UIWebView *)webView
+{
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    
+    TFLog(@"WebView: %@",[webView stringByEvaluatingJavaScriptFromString:@"document.title"]);
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+}
 
 @end

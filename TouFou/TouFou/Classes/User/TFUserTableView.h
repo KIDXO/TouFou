@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, TFUserTableStyle) {
+    TFUserTableStyleRelease,    //发布的点评
+    TFUserTableStyleComment,    //收藏的点评
+    TFUserTableStyleFavorite    //收藏的项目
+};
+
 @protocol TFUserTableViewDelegate <NSObject>
 
 - (void)TFUserTableView:(UIScrollView *)scrollView;
@@ -19,5 +25,6 @@
 
 @property (nonatomic, strong) UITableView                  *tableView;
 @property (nonatomic, weak)   id <TFUserTableViewDelegate>  delegate;
+@property (nonatomic)         TFUserTableStyle              style;
 
 @end

@@ -10,4 +10,7 @@
 
 @interface TFAgreementViewController : UIBaseViewController
 
+@property (nonatomic, strong) NSString              *strURL;
+@property (nonatomic, weak)   IBOutlet UIWebView    *webView;
+
 @end

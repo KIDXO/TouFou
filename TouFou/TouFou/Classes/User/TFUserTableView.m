@@ -59,7 +59,13 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
 #pragma mark TableView
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 250;
+    if (_style == TFUserTableStyleRelease ||
+        _style == TFUserTableStyleComment) {
+        return 250;
+    }
+    else {
+        return 300;
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section

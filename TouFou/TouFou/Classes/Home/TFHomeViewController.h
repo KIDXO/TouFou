@@ -42,4 +42,8 @@ typedef NS_ENUM(NSInteger, TFHomeCategoryState) {
 
 @property (nonatomic, weak)   IBOutlet UIView               *viewDark;
 
+@property (nonatomic, weak)   IBOutlet UIView               *viewSearch;
+@property (nonatomic, weak)   IBOutlet UIView               *viewSearchFrame;
+@property (nonatomic, weak)   IBOutlet UITextField          *textSearch;
+
 @end

@@ -24,9 +24,12 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     [self setTitle:@"投否"];
     [self setTitleCustom:@"投否首页"];
+    
     [self createReturnButton];
+    [self createCustomButton];
     
     [self initData];
     [self initView];
@@ -58,6 +61,21 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
     
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:btn];
     self.navigationItem.leftBarButtonItem = item;
+}
+
+- (void)createCustomButton
+{
+    CGRect frame = CGRectZero;
+    UIImage *image = [UIImage imageNamed:@"UINavSearch"];
+    frame.size = image.size;
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setFrame:frame];
+    [btn setImage:image forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(actionSearch) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    self.navigationItem.rightBarButtonItem = item;
 }
 
 #pragma mark -
@@ -93,10 +111,18 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
     [self.tableView registerNib:[UINib nibWithNibName:@"TFHomeTableViewCell" bundle:nil]
          forCellReuseIdentifier:strIdentifier];
     
-//    UIVisualEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
-//    UIVisualEffectView *visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
-//    visualEffectView.frame = _imageView.bounds;
-//    [_imageView addSubview:visualEffectView];
+    _viewSearchFrame.layer.cornerRadius = 5;
+    _viewSearchFrame.layer.masksToBounds = true;
+    
+    [_viewSearch setAlpha:0];
+    [_viewSearch setHidden:YES];
+    [_viewSearch setFrame:CGRectMake(0, 0, TFWidth, TFHeight)];
+    [self.window addSubview:_viewSearch];
+    
+//    UIVisualEffect *effect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+//    UIVisualEffectView *effectView = [[UIVisualEffectView alloc] initWithEffect:effect];
+//    effectView.frame = _viewSearchEffect.bounds;
+//    [_viewSearchEffect addSubview:effectView];
 }
 
 #pragma mark -
@@ -104,6 +130,25 @@ static NSString *strIdentifier = @"TFHomeTableViewCell";
 - (void)actionDrawer
 {
     [[AppDelegate sharedAppDelegate] actionDrawer:YES];
+}
+
+- (void)actionSearch
+{
+    [_textSearch becomeFirstResponder];
+    [_viewSearch setHidden:NO];
+    [UIView animateWithDuration:TFAnimate animations:^{
+        _viewSearch.alpha = 1;
+    }];
+}
+
+- (IBAction)actionSearchClose:(UIButton *)sender
+{
+    [_textSearch resignFirstResponder];
+    [UIView animateWithDuration:TFAnimate animations:^{
+        _viewSearch.alpha = 0;
+    } completion:^(BOOL finished) {
+        _viewSearch.hidden = YES;
+    }];
 }
 
 - (IBAction)actionCategory:(UIButton *)sender

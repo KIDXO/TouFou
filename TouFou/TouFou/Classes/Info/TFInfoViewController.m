@@ -23,8 +23,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     [self setTitle:@"项目详情"];
     [self setTitleCustom:@"项目详情"];
+    
     [self createReturnButton];
     [self createCustomButton];
     

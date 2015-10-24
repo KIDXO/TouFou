@@ -48,6 +48,9 @@
     _tableView1.delegate = self;
     _tableView2.delegate = self;
     _tableView3.delegate = self;
+    _tableView1.style = TFUserTableStyleRelease;
+    _tableView2.style = TFUserTableStyleComment;
+    _tableView3.style = TFUserTableStyleFavorite;
     
     _scrollViewTable.contentSize = CGSizeMake(TFWidth * 3, 0);
 }

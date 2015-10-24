@@ -10,6 +10,8 @@
 
 @interface TFInfoWriteViewController : UIBaseViewController
 
+@property (nonatomic, weak)   IBOutlet UIView                   *viewAgree;
+
 @property (nonatomic, weak)   IBOutlet UITextField              *textTitle;
 @property (nonatomic, weak)   IBOutlet UITextView               *textContent;
 

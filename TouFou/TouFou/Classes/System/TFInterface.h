@@ -9,5 +9,6 @@
 #ifndef TFInterface_h
 #define TFInterface_h
 
+#define TFAgreement                             @"http://eric.ec/toufou/"
 
 #endif /* TFInterface_h */
