@@ -57,7 +57,7 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <animations/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                             <connections>
                                 <action selector="actionDone:" destination="-1" eventType="editingDidEndOnExit" id="xEy-TE-ksw"/>
                                 <outlet property="delegate" destination="-1" id="oIp-gv-Cma"/>
